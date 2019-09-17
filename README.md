@@ -10,10 +10,13 @@ The main theme of the project will be to gather insights based on the sale of th
 Technology:
 
  
-Project idea 2:
+Project idea 2: Learning and Mentorship App
+
+Desc:
 
 
-Project idea 3:
+
+Project idea 3: 
 
 
 Project idea 4:
