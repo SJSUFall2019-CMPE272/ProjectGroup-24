@@ -23,7 +23,10 @@ Technology Stack:
 Project idea 3: Builidng Security using Face Recognition
 
 Desc:
-The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tena
+The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tenants would be chehcked by the camera and with the help of the image processing the identity of the person would be verified. This eliminates the need of caring traditional keys all the time and also making it more secure than the passcode. 
+
+Goal:
+The tenants would not need to carry keys to access the building. Additionally it makes it secure than access code system used as an alternative to the keys.
 
 
 Project idea 4:
