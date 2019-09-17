@@ -10,20 +10,20 @@ The main theme of the project will be to gather insights based on the sale of th
 Technology:
 
  
-Project idea 2: Project idea 2 : News Notification application through twitter data.	
+Project idea 2: News Notification application through Twitter data.	
 
-Project desc: The main purpose of this project is provide the users with notifications based on their location. The application will fetch data from tweets of the users and based on it, the news or event will get categorized, for example, sports, shopping, music, etc. 
+Desc:
+The main purpose of this project is provide the users with notifications based on their location. The application will fetch data from tweets of the users and based on it, the news or event will get categorized, for example, sports, shopping, music, etc. Moreover, the emergency alerts will be sent to the user, informing them if any fire, bugglary, shooting is going on in some area. This data will be also shown on Maps so that they can know where the event has occured.
 
-Goal of the project: The target of this project will be the any user who wants to know what is happening in the area and get updated based on the notifications provided by the application.
+Goal: 
+The target of this project will be the civilians who need to be aware of what is happening in the area and get updated based on the notifications provided by the application. The users will be cautious of travelling to some accident prone areas. 
 
 Technology Stack:
 
+Project idea 3: Builidng Security using Face Recognition
 
 Desc:
-
-
-
-Project idea 3: 
+The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tena
 
 
 Project idea 4:
