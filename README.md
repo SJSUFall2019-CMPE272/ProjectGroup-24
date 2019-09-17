@@ -10,7 +10,14 @@ The main theme of the project will be to gather insights based on the sale of th
 Technology:
 
  
-Project idea 2: Learning and Mentorship App
+Project idea 2: Project idea 2 : News Notification application through twitter data.	
+
+Project desc: The main purpose of this project is provide the users with notifications based on their location. The application will fetch data from tweets of the users and based on it, the news or event will get categorized, for example, sports, shopping, music, etc. 
+
+Goal of the project: The target of this project will be the any user who wants to know what is happening in the area and get updated based on the notifications provided by the application.
+
+Technology Stack:
+
 
 Desc:
 
