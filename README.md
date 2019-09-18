@@ -39,5 +39,5 @@ Goal:
 The tenants would not need to carry keys to access the building. Additionally it makes it secure than access code system used as an alternative to the keys.
 
 
-Technology Stack:
+Technology Stack: Python and OpenCV
 
