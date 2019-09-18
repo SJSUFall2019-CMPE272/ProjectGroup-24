@@ -16,24 +16,24 @@ Nowadays the health issues are growing and identifying is becoming difficult.Thi
 Goal:
 The main theme of the project will be to gather insights based on the sale of the medicines at pharmacy. Based on a particular medicine sold, we can identify the probable illness for which the medicine is targeted to treat. This data can be gathered over a period of time and help predict the common, ongoing illness that are present in that region. This data can be further leveraged to take preventive measures to contain the diseases and also carry out awareness campaigns.
 
-Technology Stack:
+Technology Stack : Python, Tensorflow.
 
  
 Project Idea 2: AlertMe! -
 Emergency News Notification	
 
 Description:
-The main purpose of this project is provide the users with emergency notifications based on their location. The application will fetch data from Twitter tweets of the users and based on it, the news or event will get categorized, for example, fires, sports, shopping, music, etc. Moreover, the emergency alerts will be sent to the user, informing them if any fire shooting is going on in some area. This data will be also shown on Maps so that they can know where the event has occured. Users will be given emergency alerts making the cautious about the parts not to visit and also the alerts could be seen on Maps as well.
+The main purpose of this project is provide the users with emergency notifications based on their location. The application will fetch data from Twitter tweets of the users and based on it, the news or event will get categorized, for example, fires, sports, shopping, music, etc. Moreover, the emergency alerts will be sent to the user, informing them if any incident is going on in some area. This data will be also shown on Maps so that they can know where the event has occured. Users will be given emergency alerts making the cautious about the parts not to visit and also the alerts could be seen on Maps as well.
 
 Goal: 
 The target of this project will be the civilians who need to be aware of what is happening in the area and get updated based on the notifications provided by the application. The users will be cautious of travelling to some accident prone areas. The alerts shown in the maps makes it better for users to understand even if they are not familiar with the area. 
 
-Technology Stack:
+Technology Stack: Python, JS, Android, Maps API, Twitter API.
 
 Project idea 3: Builidng Security using Face Recognition
 
 Description:
-The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tenants would be chehcked by the camera and with the help of the image processing the identity of the person would be verified. This eliminates the need of caring traditional keys all the time and also making it more secure than the passcode. 
+The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tenants would be chehcked by the camera and with the help of the image processing the identity of the person would be verified. This eliminates the need of carrying traditional keys all the time and also making it more secure than the passcode. Guests can be provided with  
 
 Goal:
 The tenants would not need to carry keys to access the building. Additionally it makes it secure than access code system used as an alternative to the keys.
