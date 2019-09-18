@@ -8,7 +8,7 @@ Team Members:
 
 
 Project Idea 1: 
-WellPharma
+WellPharma -
 Analysis of Prevelant Diseases based on the Inventory Management at Pharmacy
 
 Desc:
@@ -21,7 +21,7 @@ Technology:
 
  
 Project Idea 2: 
-AlertMe!
+AlertMe! -
 Emergency News Notification	
 
 Desc:
