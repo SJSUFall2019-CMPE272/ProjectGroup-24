@@ -30,7 +30,7 @@ The target of this project will be the civilians who need to be aware of what is
 
 Technology Stack: Python, JS, Android, Maps API, Twitter API.
 
-Project idea 3: Builidng Security using Face Recognition
+Project idea 3: Building Security using Face Recognition
 
 Description:
 The project will mainly include an application to the builiding management office and tenants, wherein the faces of the tenants will be saved. At the entrance of the building, the faces of the tenants would be chehcked by the camera and with the help of the image processing the identity of the person would be verified. This eliminates the need of carrying traditional keys all the time and also making it more secure than the passcode. Guests can be provided with  
