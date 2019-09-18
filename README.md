@@ -7,8 +7,7 @@ Team Members:
 4.) Udit Marolia
 
 
-Project Idea 1: 
-WellPharma -
+Project Idea 1:  WellPharma  -
 Analysis of Prevelant Diseases based on the Inventory Management at Pharmacy
 
 Desc:
@@ -20,8 +19,7 @@ The main theme of the project will be to gather insights based on the sale of th
 Technology:
 
  
-Project Idea 2: 
-AlertMe! -
+Project Idea 2: AlertMe! -
 Emergency News Notification	
 
 Desc:
