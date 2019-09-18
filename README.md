@@ -1,10 +1,10 @@
 # ProjectGroup-24
 
-Team Members:
-1.) Alaukika Diwanji
-2.) Dhruwaksh Dave
-3.) Panth Desai
-4.) Udit Marolia
+Team Members:-
+1) Alaukika Diwanji
+2) Dhruwaksh Dave
+3) Panth Desai
+4) Udit Marolia
 
 
 Project Idea 1:  WellPharma  -
