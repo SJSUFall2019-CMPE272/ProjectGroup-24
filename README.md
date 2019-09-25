@@ -7,8 +7,10 @@ Team Members:-
 4) Udit Marolia
 
 
-Project Idea 1:  WellPharma  -
+Project Idea 1:  WellPharma  - APPROVED (see below)
 Analysis of Prevelant Diseases based on the Inventory Management at Pharmacy
+
+You must clearly define the personas. If this is for the health care provider or govt agency then gathering drug sale data from all pharmacy in a zipcode(for ex) is tricky. sales data of drugs at local level may not be available publicly. They wont share. large pharma companies may share their sales data but that may not tell you the ground truth. Also in developing countries like india majority of drug sales are not tracked due to tax evasion. Here is the twist to the problem I am giving you. You apply NLP and NER on all the public news in a geography or zipcode to figure out the health related problems and then give recommnedation to local pharmacist to stock those OTC drugs. You can also extend this to beauty products based on the beauty trends but beauty trends are more global than local. Weather data can play role as well. 
 
 Description:
 Nowadays the health issues are growing and identifying is becoming difficult.This can be solved with the proposed system. The system will predict the prevalent diseases in the particular region based on the data collected from Pharmacies. The system will be an Inventory Management system for Pharmacies. The initial setup for the system will include the opening stock, the minimum threshold for each medicines and the medicine description- name, content and the symptoms which it is meant to treat. The order and sell of the medicines are noted. The pharmacy owner will be notified when any of the medicines' stock need to be refilled, based on the minimum and an order can be placed. Monthly reports will be generated which will have reports on the sale of medicines and the prevalent illness ongoing in the region.
