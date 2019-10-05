@@ -1,4 +1,4 @@
-# ProjectGroup-24
+# Well Pharma #
 
 Team Members:-
 1) Alaukika Diwanji
