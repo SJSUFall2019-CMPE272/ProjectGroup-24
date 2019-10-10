@@ -6,7 +6,7 @@
 3) Panth Desai
 4) Udit Marolia
 
-**Abstract**
+**#Abstract#**
  
 Many valuable information regarding the public health and welfare, disease outbreaks and their trend are available in the form of unstructured data lying in different news portals, Facebook, Twitter. It becomes important to become aware of the current diseases and to filter out relevant and correct information. This is especially important for commercial pharmacies as their need to be updated with the current outbreak in their region and also be ready stock-wise for the drugs needed to treat them. Our objective with Well-Pharma is to address this problem and built a system for the pharmacies which will analyse the disease outbreaks in all regions and carry out a disease-to-drug mapping and alert the pharmacist so as to keep the stock ready.
 
@@ -23,7 +23,7 @@ The main objective of the system will be to gather information regarding the dis
 ![Process](process-2.png)
 
 
-**Technology Stack**
+**#Technology Stack#**
 
 **Web Application**
 
@@ -48,6 +48,7 @@ MySQL database will be used to store all data, which is :
 
 **NLP /NER:** Python,NLTK, Tensorflow will be used for classification of the data location wise so as the location and the diseases prevalent there are identified and mapped.
 
-**Initial Feedback**
+**#Initial Feedback#**
+
 Professor Ranjan's initial feedback
 > You must clearly define the personas. If this is for the health care provider or govt agency then gathering drug sale data from all pharmacy in a zipcode(for ex) is tricky. sales data of drugs at local level may not be available publicly. They wont share. large pharma companies may share their sales data but that may not tell you the ground truth. Also in developing countries like india majority of drug sales are not tracked due to tax evasion. Here is the twist to the problem I am giving you. You apply NLP and NER on all the public news in a geography or zipcode to figure out the health related problems and then give recommnedation to local pharmacist to stock those OTC drugs. You can also extend this to beauty products based on the beauty trends but beauty trends are more global than local. Weather data can play role as well. 
