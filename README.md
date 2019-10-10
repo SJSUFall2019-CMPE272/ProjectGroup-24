@@ -23,4 +23,21 @@ The main objective of the system will be to gather information regarding the dis
 ![Process](process-2.png)
 
 
+**Technology Stack**
+
+**Web Application**
+The Web Application will be the main interface to the users. The application will be built using the JS tools 
+**Frontend:** ReactJS will be used for the GUI.It will also take care of the authentication and token passing.
+**Backend:** NodeJS  and NPM Libraries will be used for backend. It will communicate with MySQL database to fetch the queried. Data
+**Cloud:** The web application will be hosted on Amazon AWS using Docker container
+
+**Database**
+MySQL database will be used to store all data, which is :
+  a) The data from the classification model, which will give information about location wise disease outbreak
+  b) The disease to drug mapped data
+  c) The web application data
+
+**Data Model**
+**Data Cleaning and preprocessing:** Python will be used to extract the data from various public web sources clean the data
+**NLP /NER:** Python,NLTK, Tensorflow will be used for classification of the data location wise so as the location and the diseases prevalent there are identified and mapped.
 
