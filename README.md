@@ -1,6 +1,6 @@
 # Well Pharma #
 
-**Team Members:-**
+**Team Members**
 1) Alaukika Diwanji
 2) Dhruwaksh Dave
 3) Panth Desai
@@ -48,5 +48,6 @@ MySQL database will be used to store all data, which is :
 
 **NLP /NER:** Python,NLTK, Tensorflow will be used for classification of the data location wise so as the location and the diseases prevalent there are identified and mapped.
 
-
-
+**Initial Feedback**
+Professor Ranjan's initial feedback
+> You must clearly define the personas. If this is for the health care provider or govt agency then gathering drug sale data from all pharmacy in a zipcode(for ex) is tricky. sales data of drugs at local level may not be available publicly. They wont share. large pharma companies may share their sales data but that may not tell you the ground truth. Also in developing countries like india majority of drug sales are not tracked due to tax evasion. Here is the twist to the problem I am giving you. You apply NLP and NER on all the public news in a geography or zipcode to figure out the health related problems and then give recommnedation to local pharmacist to stock those OTC drugs. You can also extend this to beauty products based on the beauty trends but beauty trends are more global than local. Weather data can play role as well. 
