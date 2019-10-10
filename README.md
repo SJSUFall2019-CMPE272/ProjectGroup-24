@@ -15,4 +15,6 @@ WellPharma will be a Web Application - built as an automated system for querying
 
 **Process Flow**
 
+![Process](Process.png)
+
 
