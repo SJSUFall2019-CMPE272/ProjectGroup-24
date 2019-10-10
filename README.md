@@ -41,3 +41,5 @@ MySQL database will be used to store all data, which is :
 **Data Cleaning and preprocessing:** Python will be used to extract the data from various public web sources clean the data
 **NLP /NER:** Python,NLTK, Tensorflow will be used for classification of the data location wise so as the location and the diseases prevalent there are identified and mapped.
 
+
+
