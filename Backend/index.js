@@ -34,16 +34,13 @@ app.use(function(req, res, next) {
     next();
   });
 
- 
+  var loginRouter = require('./src/Login');
+  var signupRouter = require('./src/SignUp');
+  var contactusRouter = require('./src/ContactUs');
+  app.use('/login',loginRouter);
+  app.use('/signUp',signupRouter);
+  app.use('/contactus',contactusRouter);
 
-  
-
-
-app.post('/login',function(req,res){
-    
-   
-    
-});
 
 app.get('/home', function(req,res){
     

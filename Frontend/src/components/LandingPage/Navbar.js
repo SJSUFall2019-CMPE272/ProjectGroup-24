@@ -26,7 +26,7 @@ class Navbar extends Component {
             );
         }else{
             //Else display login button
-            console.log("Not Able to read cookie");
+            console.log("Not Able to read Token");
             navLogin = (
                 <ul class="nav navbar-nav navbar-right">
                         <li><Link to="/login"><span class="glyphicon glyphicon-log-in"></span> Login</Link></li>
@@ -34,7 +34,7 @@ class Navbar extends Component {
             )
         }
         let redirectVar = null;
-        if(cookie.load('cookie')){
+        if(localStorage.get('jwtToken')){
             redirectVar = <Redirect to="/home"/>
         }
         return(

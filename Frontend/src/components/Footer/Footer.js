@@ -21,17 +21,15 @@ class Home extends Component {
             <h4>Services</h4>
             <ul class="footer-link list-unstyled">
               <li>
-                <a href="#">Find a doctor</a>
+                <a href="#">DD Map</a>
               </li>
               <li>
                 <a href="#">Urgent Care</a>
               </li>
               <li>
-                <a href="#">Emergency Care</a>
+                <a href="#">Drug Care</a>
               </li>
-              <li>
-                <a href="#">Procedures &amp; Treatments</a>
-              </li>
+              
               <li>
                 <a href="#">Online Services</a>
               </li>
@@ -55,10 +53,10 @@ class Home extends Component {
             <h4>About</h4>
             <ul class="footer-link list-unstyled">
               <li>
-                <a href="#">About The Hospital</a>
+                <a href="/aboutus">About Wellpharma</a>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <a href="/contactus">Feedback</a>
               </li>
               <li>
                 <a href="#">Accreditations &amp; Awards</a>
@@ -66,18 +64,16 @@ class Home extends Component {
               <li>
                 <a href="#">Careers</a>
               </li>
-              <li>
-                <a href="#">Feedback</a>
-              </li>
+             
             </ul>
           </div>
           <div class="col-md-3 mb-5">
             <h4>Location &amp; Contact</h4>
-            <p class="mb-5">134 Street Name, City Name Here, United States</p>
+            <p class="mb-5">134 San Jose State, San Jose, United States</p>
 
             <h4 class="text-uppercase mb-3 h6 text-white">Email</h4>
             <p class="mb-5">
-              <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+              <a href="mailto:info@yourdomain.com">info@wellpharma.com</a>
             </p>
 
             <h4 class="text-uppercase mb-3 h6 text-white">Phone</h4>

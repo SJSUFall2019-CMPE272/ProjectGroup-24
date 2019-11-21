@@ -1,102 +1,135 @@
-import React, {Component} from 'react';
-import '../../App.css';
-import axios from 'axios';
-import cookie from 'react-cookies';
-import {Redirect} from 'react-router';
+import React, { Component } from "react";
+import "../../App.css";
+import axios from "axios";
+import { Redirect } from "react-router";
+import { Row, Col, Form, Button } from "react-bootstrap";
+import { hostAddress, port } from "../../config";
 
-//Define a Login Component
-class Login extends Component{
-    //call the constructor method
-    constructor(props){
-        //Call the constrictor of Super class i.e The Component
-        super(props);
-        //maintain the state required for this component
-        this.state = {
-            username : "",
-            password : "",
-            authFlag : false
+class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      password: "",
+      authFlag: false
+    };
+
+    this.inputChangeHandler = this.inputChangeHandler.bind(this);
+    this.submitLogin = this.submitLogin.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState({
+      authFlag: false
+    });
+  }
+
+  inputChangeHandler = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  //submit Login handler to send a request to the node backend
+  submitLogin = e => {
+    //prevent page from refresh
+    e.preventDefault();
+    const data = {
+      email: this.state.email,
+      password: this.state.password
+    };
+
+    //set the with credentials to true
+    axios.defaults.withCredentials = true;
+    //make a post request with the user data
+    axios
+      .post("http://" + hostAddress + ":" + port + "/login/login", data)
+      .then(response => {
+        console.log("Status Code : ", response.status);
+        alert(response.data.msg);
+        if (response.data.token != null) {
+          localStorage.setItem("jwtToken", response.data.token);
+          localStorage.setItem("email", this.state.email);
+          localStorage.setItem("fullname", response.data.uname);
+          this.setState({
+            authFlag: true
+          });
+        } else {
+          this.setState({
+            authFlag: false
+          });
         }
-        //Bind the handlers to this class
-        this.usernameChangeHandler = this.usernameChangeHandler.bind(this);
-        this.passwordChangeHandler = this.passwordChangeHandler.bind(this);
-        this.submitLogin = this.submitLogin.bind(this);
-    }
-    //Call the Will Mount to set the auth Flag to false
-    componentWillMount(){
-        this.setState({
-            authFlag : false
-        })
-    }
-    //username change handler to update state variable with the text entered by the user
-    usernameChangeHandler = (e) => {
-        this.setState({
-            username : e.target.value
-        })
-    }
-    //password change handler to update state variable with the text entered by the user
-    passwordChangeHandler = (e) => {
-        this.setState({
-            password : e.target.value
-        })
-    }
-    //submit Login handler to send a request to the node backend
-    submitLogin = (e) => {
-        var headers = new Headers();
-        //prevent page from refresh
-        e.preventDefault();
-        const data = {
-            username : this.state.username,
-            password : this.state.password
-        }
-        //set the with credentials to true
-        axios.defaults.withCredentials = true;
-        //make a post request with the user data
-        axios.post('http://localhost:3001/login',data)
-            .then(response => {
-                console.log("Status Code : ",response.status);
-                if(response.status === 200){
-                    this.setState({
-                        authFlag : true
-                    })
-                }else{
-                    this.setState({
-                        authFlag : false
-                    })
-                }
-            });
+      })
+      .catch(() => {
+        alert("Could Not Login!:(");
+      });
+  };
+
+  render() {
+    //redirect based on successful login
+    let redirectVar = null;
+    if (localStorage.getItem("jwtToken")) {
+      redirectVar = <Redirect to="/userhome" />;
     }
 
-    render(){
-        //redirect based on successful login
-        let redirectVar = null;
-        if(cookie.load('cookie')){
-            redirectVar = <Redirect to= "/home"/>
-        }
-        return(
-            <div>
-                {redirectVar}
-            <div class="container">
-                
-                <div class="login-form">
-                    <div class="main-div">
-                        <div class="panel">
-                            <h2>Admin Login</h2>
-                            <p>Please enter your username and password</p>
-                        </div>
-                        
-                            <div class="form-group">
-                                <input onChange = {this.usernameChangeHandler} type="text" class="form-control" name="username" placeholder="Username"/>
-                            </div>
-                            <div class="form-group">
-                                <input onChange = {this.passwordChangeHandler} type="password" class="form-control" name="password" placeholder="Password"/>
-                            </div>
-                            <button onClick = {this.submitLogin} class="btn btn-primary">Login</button>                 
-                    </div>
-                </div>
-            </div>
-            </div>
-        )
-    }
+    return (
+      <Row>
+        {redirectVar}
+        <Col
+          className="col-sm-8"
+          style={{
+            backgroundImage:
+              "url(https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1)",
+            height: "700px"
+          }}
+        >
+          {/* <img
+            style={{ width: "100%" }}
+            src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
+          ></img> */}
+        </Col>
+        <Col className="col-sm-3">
+          <br></br>
+          <Form>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                name="email"
+                onChange={this.inputChangeHandler}
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={this.inputChangeHandler}
+              />
+            </Form.Group>
+
+            <Button
+              style={{ float: "right" }}
+              onClick={this.submitLogin}
+              variant="primary"
+              type="submit"
+            >
+              Submit
+            </Button>
+          </Form>
+          <br></br>
+          <div style={{ paddingTop: "10px" }}>
+            <a href="/signup" style={{ textAlign: "center" }}>
+              Not a Member? Sign Up!
+            </a>
+          </div>
+        </Col>
+      </Row>
+    );
+  }
 }
 //export Login Component
 export default Login;

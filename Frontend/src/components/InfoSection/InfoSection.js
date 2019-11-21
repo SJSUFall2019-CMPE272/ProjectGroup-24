@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
-import '../../App.css';
-import axios from 'axios';
-import cookie from 'react-cookies';
-import {Redirect} from 'react-router';
 
+import {Container, Button} from 'reactstrap';
 
-class Home extends Component {
+class InfoSection extends Component {
     constructor(){
         super();
         
@@ -16,23 +13,25 @@ class Home extends Component {
 
     render(){   
         return(
-            <div class="cover_1" style={{backgroundImage: "url(https://www.smashboxconsulting.com/hs-fs/hubfs/Smashbox_2018/Images/Business_Model-bg.png?width=1589&name=Business_Model-bg.png)"}}>
-            <div class="container">
+      
+            <Container>
               <div class="row text-center justify-content-center">
                 <div class="">
-                  <h3 class="heading element-animate">Try out our DD Map!</h3>
+                  <h3 class="heading element-animate"><b>Try out our DD Map!</b></h3>
                   <p class="sub-heading element-animate mb-5">The DD Map is short for the Disease-to-Drug Map, which helps you find which disease is more prevelant in the selected region and get the drugs that are most effective to them!</p>
-                  <br></br>
-                  <p class="element-animate"><a href="#" class="btn btn-primary">Try Now!</a></p>
+                  
+                  <Button href="/map" color="info" style={{ width:"8%",fontSize:"90%"}}>Try Now!</Button>
                   <br></br>
                 </div>
+                <br></br>
               </div>
-            </div>
-          </div>
+           
+          </Container>
+        
             
         )
     }
 }
-//export Home Component
-export default Home;
+
+export default InfoSection;
 

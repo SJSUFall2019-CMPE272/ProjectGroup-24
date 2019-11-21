@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import '../../App.css';
-import axios from 'axios';
-import cookie from 'react-cookies';
-import {Redirect} from 'react-router';
+
 import Slider from '../Slider/Slider'
 import Footer from '../Footer/Footer';
-import InfoSection from '../InfoSection/InfoSection'
-import MapChart from '../MapChart/MapChart'
+import InfoSection from '../InfoSection/InfoSection';
+import AboutUs from '../AboutUs/AboutUs';
 
 class Home extends Component {
     constructor(){
@@ -18,16 +15,19 @@ class Home extends Component {
     }
 
     render(){
-        
         return(
-         <div>
+       <div>
+           
              <Slider/>
              <br></br>
              <br></br>
-             <InfoSection/>
-             <MapChart />
+             <br></br>
+             <InfoSection/> 
+          
+             <AboutUs/>
+                
              <Footer/>
-         </div>
+             </div>
             
         )
     }
