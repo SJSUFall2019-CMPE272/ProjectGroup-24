@@ -12,7 +12,7 @@ Many valuable information regarding the public health and welfare, disease outbr
 
 WellPharma will be a Web Application - built as an automated system for querying filtering and visualising the disease outbreak and to stock their respective drugs.
 
-### Target User ###
+### Persona ###
 
 The main target user for the application will be the commercial pharmacies. The system will provide insights to the pharmacists on which drugs need to be stocked as per the current disease outbreak. 
 
