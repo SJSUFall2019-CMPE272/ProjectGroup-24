@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import Slider from '../Slider/Slider'
 import Footer from '../Footer/Footer';
 import InfoSection from '../InfoSection/InfoSection';
