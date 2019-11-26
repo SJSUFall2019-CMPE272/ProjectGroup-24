@@ -6,6 +6,9 @@ var database = new require("./database.js");
 var Login = require("./services/login");
 var SignUp = require("./services/signup");
 var ContactUs = require("./services/contactus");
+var Profile = require("./services/profile");
+var UpdateProfile = require("./services/updateprofile");
+var GetLocation = require("./services/getlocation");
 
 function handleTopicRequest(topic_name, fname) {
   //var topic_name = 'root_topic';
@@ -43,3 +46,6 @@ function handleTopicRequest(topic_name, fname) {
 handleTopicRequest("login", Login);
 handleTopicRequest("signup", SignUp);
 handleTopicRequest("contactus", ContactUs);
+handleTopicRequest("profile", Profile);
+handleTopicRequest("updateprofile", UpdateProfile);
+handleTopicRequest("getlocation", GetLocation);

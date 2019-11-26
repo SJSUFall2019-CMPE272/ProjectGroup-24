@@ -37,16 +37,29 @@ app.use(function(req, res, next) {
   var loginRouter = require('./src/Login');
   var signupRouter = require('./src/SignUp');
   var contactusRouter = require('./src/ContactUs');
+  var profileRouter=require('./src/Profile');
+  var updateprofileRouter=require('./src/UpdateProfile');
+  var getLocationRouter=require('./src/GetLocation');
+
   app.use('/login',loginRouter);
   app.use('/signUp',signupRouter);
   app.use('/contactus',contactusRouter);
+  app.use('/profile',profileRouter);
+  app.use('/updateprofile',updateprofileRouter);
+  app.use('/getlocation',getLocationRouter);
 
+// app.get('/home', function(req,res){
+//   const { spawn } = require('child_process');
+//   const pyProg = spawn('python', ['./../pypy.py'], "San Jose");
 
-app.get('/home', function(req,res){
-    
-    
-    
-})
+//   pyProg.stdout.on('data', function(data) {
+
+//       console.log(data.toString());
+//       res.write(data);
+//       res.end('end');
+//   });  
+//})
+
 //start your server on port 3001
 app.listen(3001);
 console.log("Server Listening on port 3001");
