@@ -8,7 +8,7 @@ import MapChart from './MapChart/MapChart';
 import SignUp from './SignUp/SignUp';
 import AboutUs from  './AboutUs/AboutUs';
 import ContactUs from './ContactUs/ContactUs';
-import UserHome from './UserHome/UserHome';
+//import UserHome from './UserHome/UserHome';
 import Profile from './Profile/Profile'
 
 //Create a Main Component
@@ -25,7 +25,7 @@ class Main extends Component {
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/contactus" component={ContactUs}/>
                 <Route path="/home" component={Home}/>
-                <Route path="/userhome" component={UserHome}/>
+                <Route path="/userhome" component={Profile}/>
                 <Route path="/map" component={MapChart}/>
             </div>
         )
