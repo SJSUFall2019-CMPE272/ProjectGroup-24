@@ -50,7 +50,7 @@ class Login extends Component {
         if (response.data.token != null) {
           localStorage.setItem("jwtToken", response.data.token);
           localStorage.setItem("email", this.state.email);
-          localStorage.setItem("fullname", response.data.uname);
+          localStorage.setItem("fullname", response.data.name);
           this.setState({
             authFlag: true
           });

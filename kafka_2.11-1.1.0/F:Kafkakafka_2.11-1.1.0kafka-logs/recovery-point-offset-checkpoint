@@ -2,10 +2,10 @@
 9
 signup 0 4
 contactus 0 3
-response_topic 0 52
-getlocation 0 0
-profile 0 0
-login 0 40
+response_topic 0 76
+getlocation 0 4
+profile 0 16
+login 0 41
 response_topics 0 0
 listTopics 0 0
-updateprofile 0 0
+updateprofile 0 3

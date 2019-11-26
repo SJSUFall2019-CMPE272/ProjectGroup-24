@@ -18,6 +18,7 @@ function handle_request(msg, callback) {
     if (result != null) {
       uname = result[0].fullname;
       console.log(msg.password);
+      console.log(uname)
       passwordInDb = result[0].password;
       console.log(passwordInDb)
       bcrypt.compare(msg.password, passwordInDb, function(err, resp) {

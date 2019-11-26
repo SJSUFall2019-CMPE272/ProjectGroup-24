@@ -9,7 +9,7 @@ import SignUp from './SignUp/SignUp';
 import AboutUs from  './AboutUs/AboutUs';
 import ContactUs from './ContactUs/ContactUs';
 //import UserHome from './UserHome/UserHome';
-import Profile from './Profile/Profile'
+import Search from './Search/Search'
 
 //Create a Main Component
 class Main extends Component {
@@ -21,11 +21,11 @@ class Main extends Component {
                 <Route path="/" component={TopBar}/>
                 <Route path="/aboutus" component={AboutUs}/>
                 <Route path="/login" component={Login}/>
-                <Route path="/profile" component={Profile}/>
+                
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/contactus" component={ContactUs}/>
                 <Route path="/home" component={Home}/>
-                <Route path="/userhome" component={Profile}/>
+                <Route path="/userhome" component={Search}/>
                 <Route path="/map" component={MapChart}/>
             </div>
         )
