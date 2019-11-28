@@ -96,10 +96,17 @@ class Login extends Component {
   responseGoogle = async response => {
     console.log(response);
     const userObject = {
+<<<<<<< HEAD
       username: response.w3,
       password: "test"
     };
     if (response.w3) {
+=======
+      username: response.w3.ofa,
+      password: 'test'
+   }
+   if(response.w3.ofa) {
+>>>>>>> 5ccda60a5b73ab6e2a2cf89fcd63b9d0a054391e
       await localStorage.setItem("user", JSON.stringify(userObject));
       await window.location.reload();
     } else {
