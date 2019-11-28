@@ -208,12 +208,12 @@ class TopBar extends React.Component {
           </div>
           <div>
             <br></br>
-            <ButtonGroup style={{ justifyContent: "center" ,textAlign:"center"}}>
+            <ButtonGroup style={{ float:"left" ,textAlign:"center", marginLeft:"25%"}}>
               <Button
                 color="info"
                 style={{
                   fontSize: "15px",
-                  margin: "0 5% 0 0",
+                 margin:"5px",
                   width: "80px"
                 }}
                 onClick={this.updateProfile}
@@ -224,7 +224,7 @@ class TopBar extends React.Component {
                 color="danger"
                 style={{
                   fontSize: "15px",
-                  margin: "0 5% 0 0",
+                  margin:"5px",
                   width: "80px"
                 }}
                 onClick={this.closeModal}
@@ -351,14 +351,16 @@ class TopBar extends React.Component {
               </FormGroup>
             </Col>
           </Row>
-
-          <ButtonGroup style={{ justifyContent: "center" }}>
+<Row>
+          <ButtonGroup  style={{  float:"left", marginLeft:"30%" }}>
             <Button
               color="info"
               style={{
                 fontSize: "15px",
-                margin: "0 5% 0 0",
-                width: "80px"
+                // margin: "0 30% 0 0",
+                width: "80px",
+                marginLeft: "7px",
+                // float:"right"
               }}
               onClick={this.makeChange}
             >
@@ -368,7 +370,8 @@ class TopBar extends React.Component {
               color="danger"
               style={{
                 fontSize: "15px",
-                margin: "0 5% 0 0",
+                // margin: "0 30% 0 0",
+                marginLeft: "7px",
                 width: "80px"
               }}
               onClick={this.closeModal}
@@ -376,6 +379,7 @@ class TopBar extends React.Component {
               Cancel
             </Button>
           </ButtonGroup>
+          </Row>
         </Form>
       );
     }
