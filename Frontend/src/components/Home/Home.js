@@ -3,6 +3,7 @@ import Slider from '../Slider/Slider'
 import Footer from '../Footer/Footer';
 import InfoSection from '../InfoSection/InfoSection';
 import AboutUs from '../AboutUs/AboutUs';
+import './Home.css';
 
 class Home extends Component {
     constructor(){
@@ -15,7 +16,7 @@ class Home extends Component {
 
     render(){
         return(
-       <div>
+       <div class="home">
            
              <Slider/>
              <br></br>

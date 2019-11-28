@@ -1,5 +1,6 @@
 import React from "react";
 import { VectorMap } from "react-jvectormap"
+import '../Home/Home.css'
 const { getCode, getName, getData } = require("country-list");
 
 
@@ -24,7 +25,7 @@ const handleClick = (e, countryCode) => {
 
 const MapChart = () => {
   return (
-    <div>
+    <div class="home">
       <VectorMap
         map={"world_mill"}
         backgroundColor="transparent" //change it to ocean blue: #0077be

@@ -13,7 +13,6 @@ class Login extends Component {
       password: "",
       authFlag: false
     };
-
     this.inputChangeHandler = this.inputChangeHandler.bind(this);
     this.submitLogin = this.submitLogin.bind(this);
   }
@@ -88,7 +87,7 @@ class Login extends Component {
             src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
           ></img> */}
         </Col>
-        <Col className="col-sm-3">
+        <Col className="col-sm-3 home">
           <br></br>
           <Form>
             <Form.Group controlId="formBasicEmail">

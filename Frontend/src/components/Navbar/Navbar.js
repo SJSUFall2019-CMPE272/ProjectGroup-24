@@ -432,7 +432,7 @@ class TopBar extends React.Component {
             <img
               alt="Grubhub App"
               src="https://www.pharmacienswellpharma.com/wp-content/themes/pharmacienwellpharma/assets/img/logo_WP-bleu-sans-fond.png"
-              style={{ height: "50px", marginTop: "10%" }}
+              style={{ height: "50px", marginTop: "10%" , paddingBottom:"10%" }}
             ></img>
           </NavbarBrand>
           <Nav className="ml-auto" navbar>
