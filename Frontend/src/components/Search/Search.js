@@ -200,24 +200,30 @@ class Search extends Component {
         else if (item.Drug1 == null)
           tablecontent.push(
             <tr>
+              
               <td style={{}}>{item.Disease}</td>
               <td style={{}}>No Drugs For this one! :(</td>
+                
             </tr>
           );
         else if (item.Drug1 != null && item.Drug2 == null)
           tablecontent.push(
             <tr>
+              
               <td style={{}}>{item.Disease}</td>
               <td style={{}}>{item.Drug1}</td>
+             
             </tr>
           );
         else if (item.Drug1 != null && item.Drug3 == null && item.Drug2 != null)
           tablecontent.push(
             <tr>
+               
               <td style={{}}>{item.Disease}</td>
               <td style={{}}>
                 {item.Drug1},{item.Drug2}
               </td>
+              
             </tr>
           );
       });
@@ -263,16 +269,18 @@ marginBottom:"20px",
             style={{
               backgroundColor: "#fffff",
               width: "400px",
-              marginBottom:"20px"
+              marginBottom:"20px",
+              fontSize:"13px"
               // margin: "10px 0% 30% 35%"
               
             }}
           >
             <thead>
-              <th>Disease in the Region</th>
+              <th>Diseases</th>
               <th>Drugs you may need to stock</th>
             </thead>
             <tbody>
+              
               {/*Display the Tbale row based on data recieved*/}
               {tablecontent}
             </tbody>
@@ -289,7 +297,7 @@ marginBottom:"20px",
           <br></br>
         <div class="container" style={{width:"40%", height:"auto"}}>
               
-          <div class="panel" style={{backgroundColor:"rgba(255, 255, 255, 0.8)"}}>
+          <div class="panel" style={{backgroundColor:"rgba(255, 255, 255, 0.9)"}}>
           <div  style={{ textAlign: "center" }}>{display}</div>
           
       
