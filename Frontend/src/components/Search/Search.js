@@ -162,7 +162,7 @@ class Search extends Component {
             }}
           >
             <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" style={{fontSize:"13px"}}>
-              Select the Region to Search
+              Select
             </Dropdown.Toggle>
 
             <Dropdown.Menu as={CustomMenu}>{displayRegion}</Dropdown.Menu>

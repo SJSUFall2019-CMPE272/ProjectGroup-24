@@ -1,11 +1,26 @@
 import React, { Component } from "react";
-import GoogleLogin from 'react-google-login'
+import GoogleLogin from "react-google-login";
 import "../../App.css";
 import axios from "axios";
 import { Redirect } from "react-router";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import { hostAddress, port } from "../../config";
+import firebase from "firebase";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
+
+require('@firebase/auth');
+require('@firebase/firestore');
+
+firebase.initializeApp({
+  apiKey: "AIzaSyCQeJFB522BMbD7ZUNX64bK5dd5o-0Jbe4",
+  authDomain: "wellpharma.firebaseapp.com"
+});
+let uiConfig = {
+  signInFlow: "redirect",
+  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
+  callbacks: { signInSuccess: () => false }
+};
 
 class Login extends Component {
   constructor(props) {
@@ -13,16 +28,28 @@ class Login extends Component {
     this.state = {
       email: "",
       password: "",
-      authFlag: false
+      authFlag: false,
+      isSignedIn: false
     };
+
     this.inputChangeHandler = this.inputChangeHandler.bind(this);
     this.submitLogin = this.submitLogin.bind(this);
   }
 
-  componentWillMount() {
-    this.setState({
-      authFlag: false
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged(user => {
+
+      if(!!user){
+        localStorage.setItem("jwtToken", "Alaukika");
+        
+      }
+      this.setState({ isSignedIn: !!user });
+      console.log("user", user);
     });
+
+    // this.setState({
+    //   authFlag: false
+    // });
   }
 
   inputChangeHandler = e => {
@@ -66,26 +93,56 @@ class Login extends Component {
       });
   };
 
-   responseGoogle = async (response) => {
+  responseGoogle = async response => {
     console.log(response);
     const userObject = {
       username: response.w3,
-      password: 'test'
-   }
-   if(response.w3) {
+      password: "test"
+    };
+    if (response.w3) {
       await localStorage.setItem("user", JSON.stringify(userObject));
       await window.location.reload();
-   } else {
-
-}
-
-  }
+    } else {
+    }
+  };
   render() {
+    let goog = null;
     //redirect based on successful login
     let redirectVar = null;
+    if (this.state.isSignedIn) {
+      localStorage.setItem("email", firebase.auth().currentUser.email);
+      localStorage.setItem("mobile", firebase.auth().currentUser.phoneNumber);
+      
+
+        localStorage.setItem("fullname", firebase.default.auth().currentUser.displayName);
+        redirectVar = <Redirect to="/userhome" />;
+      goog = (
+        <span>
+          <div>Signed In!</div>
+          <button onClick={() => firebase.default.auth().signOut()}>
+            Sign out
+          </button>
+          <h1>WELCOME {firebase.default.auth().currentUser.displayName}</h1>
+          <img alt="" src={firebase.auth().currentUser.photoURL} />
+                
+        </span>
+      );
+    } else {
+      goog = ( // <div>Not Signed In!</div>
+        <StyledFirebaseAuth style={{float:"left",marginRight:"100%"}}
+          uiConfig={uiConfig}
+          firebaseAuth={firebase.auth()}
+        />
+      );
+    }
+
+
     if (localStorage.getItem("jwtToken")) {
       redirectVar = <Redirect to="/userhome" />;
     }
+  
+    
+
     // if (localStorage.getItem("user")) {
     //   redirectVar = <Redirect to="/userhome" />;
     // }
@@ -105,34 +162,45 @@ class Login extends Component {
             src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
           ></img> */}
         </Col>
-        <Col className="col-sm-4 home" style={{backgroundColor:"#f9f9f9"}}>
+        <Col className="col-sm-4 home" style={{ backgroundColor: "#f9f9f9" }}>
           <br></br>
-          <img style={{margin:"0 0 0 25%", height:"100px"}} src="https://www.pharmacienswellpharma.com/wp-content/themes/pharmacienwellpharma/assets/img/logo_WP-bleu-sans-fond.png"></img>
-           <Form style={{marginTop:"10%"}}>
-            <Form.Group controlId="formBasicEmail" style={{width:"50%", marginLeft:"16%"}}>
-              <Form.Label style={{marginLeft:"5px"}}>Email Address</Form.Label>
+          <img
+            style={{ margin: "0 0 0 25%", height: "100px" }}
+            src="https://www.pharmacienswellpharma.com/wp-content/themes/pharmacienwellpharma/assets/img/logo_WP-bleu-sans-fond.png"
+          ></img>
+          <Form style={{ marginTop: "10%" }}>
+            <Form.Group
+              controlId="formBasicEmail"
+              style={{ width: "50%", marginLeft: "24%" }}
+            >
+              <Form.Label style={{ marginLeft: "5px" }}>
+                Email Address
+              </Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Email"
                 name="email"
-                style={{height:"30px", fontSize:"13px"}}
+                style={{ height: "30px", fontSize: "13px" }}
                 onChange={this.inputChangeHandler}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword" style={{width:"50%", marginLeft:"16%"}}> 
-              <Form.Label style={{marginLeft:"5px"}}>Password</Form.Label>
+            <Form.Group
+              controlId="formBasicPassword"
+              style={{ width: "50%", marginLeft: "24%" }}
+            >
+              <Form.Label style={{ marginLeft: "5px" }}>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Password"
                 name="password"
-                style={{height:"30px", fontSize:"13px"}}
+                style={{ height: "30px", fontSize: "13px" }}
                 onChange={this.inputChangeHandler}
               />
             </Form.Group>
 
             <Button
-              style={{ float: "left", marginLeft:"53%" , fontSize:"13px"}}
+              style={{ float: "left", marginLeft: "61%", fontSize: "13px" }}
               onClick={this.submitLogin}
               color="info"
               type="submit"
@@ -142,7 +210,6 @@ class Login extends Component {
             </Button>
             {/* <GoogleLogin /> */}
           </Form>
-
           {/* <GoogleLogin
     clientId="1060379313741-aedbu3ftoqsmhjk3moq7sre2ohpd559n.apps.googleusercontent.com"
     buttonText="Login"
@@ -152,10 +219,18 @@ class Login extends Component {
   />, */}
           <br></br>
           <div style={{ paddingTop: "10px" }}>
-            <a href="/signup" style={{ textAlign: "left", marginLeft: "-50%", fontSize:"13px" }}>
+            <a
+              href="/signup"
+              style={{
+                textAlign: "left",
+                marginLeft: "-50%",
+                fontSize: "13px"
+              }}
+            >
               Not a Member? Sign Up!
             </a>
           </div>
+          {goog} 
         </Col>
       </Row>
     );

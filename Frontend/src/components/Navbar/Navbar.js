@@ -13,6 +13,13 @@ import { hostAddress, port } from "../../config";
 import Modal from "react-modal";
 import { ButtonGroup, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import firebase from "firebase";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+
+
+require('@firebase/auth');
+require('@firebase/firestore');
+
 
 const config = {
   headers: {
@@ -37,15 +44,15 @@ class TopBar extends React.Component {
     super(props);
     this.state = {
       modalIsOpen: false,
-      fullname: "Cristiano Ronaldo",
-      email: "admin@admin.com",
-      address: "383 Stockton Avenue",
-      zipcode: "95126",
-      city: "San Jose",
-      country: "USA",
-      mobile: "8866215479",
+      fullname: "Pending",
+      email: "Pending",
+      address: "Pending",
+      zipcode: 0,
+      city: "Pending",
+      country: "Pending",
+      mobile: "Pending",
       updateFlag: false,
-      password: ""
+      password: "default"
     };
 
     this.openModal = this.openModal.bind(this);
@@ -60,6 +67,9 @@ class TopBar extends React.Component {
   }
 
   handleLogout = () => {
+    if(localStorage.getItem("jwtToken")=="Alaukika"){
+      firebase.default.auth().signOut()}
+    
     localStorage.clear();
   };
 
@@ -72,6 +82,17 @@ class TopBar extends React.Component {
   };
 
   openModal() {
+    if(localStorage.getItem("jwtToken")=="Alaukika"){
+      
+            this.setState({
+              email: localStorage.getItem("email"),
+              fullname: localStorage.getItem("fullname"),
+              mobile: localStorage.getItem("mobile"),
+              modalIsOpen: true
+            });
+       
+        
+    }else{
     if(localStorage.getItem("email")!=null){
       axios.defaults.withCredentials = true;
       const data = {
@@ -99,7 +120,7 @@ class TopBar extends React.Component {
           });
         });
       }
-
+    }
     // this.setState({  });
   }
 
@@ -119,6 +140,7 @@ class TopBar extends React.Component {
   };
 
   makeChange=e=>{
+   
     axios.defaults.withCredentials = true;
     const data = {
       email: localStorage.getItem("email"),
@@ -142,6 +164,7 @@ class TopBar extends React.Component {
         alert(response.data);
         this.closeModal();
       });
+    
   }
 
 

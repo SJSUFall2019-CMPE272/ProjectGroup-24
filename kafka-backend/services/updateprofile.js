@@ -11,19 +11,22 @@ function handle_request(msg, callback) {
 //       if err throw err
   Users.findOneAndUpdate({email:msg.email}, {
     fullname: msg.fullname,
-    password:hash,
     address: msg.address,
     mobile: msg.mobile,
     city: msg.city,
     country: msg.country,
     zipcode: msg.zipcode
-  },function(err, result) {
-    if (err) throw err;
+  },{upsert: true},function(err, result) {
+    if (err) {
+      throw err;
+      callback(null, "Could Not Add user!");
+    }else{
     console.log(result);
     console.log(msg.email);
 
       callback(null, "Details Updated!");
-  //})
+
+  }
 })
 }
 
