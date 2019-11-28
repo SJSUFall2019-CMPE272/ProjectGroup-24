@@ -21,7 +21,6 @@ class Main extends Component {
                 <Route path="/" component={TopBar}/>
                 <Route path="/aboutus" component={AboutUs}/>
                 <Route path="/login" component={Login}/>
-                
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/contactus" component={ContactUs}/>
                 <Route path="/home" component={Home}/>
