@@ -50,7 +50,7 @@ class TopBar extends React.Component {
       zipcode: 0,
       city: "Pending",
       country: "Pending",
-      mobile: "Pending",
+      mobile: 0,
       updateFlag: false,
       password: "default"
     };
@@ -87,7 +87,6 @@ class TopBar extends React.Component {
             this.setState({
               email: localStorage.getItem("email"),
               fullname: localStorage.getItem("fullname"),
-              mobile: localStorage.getItem("mobile"),
               modalIsOpen: true
             });
        
