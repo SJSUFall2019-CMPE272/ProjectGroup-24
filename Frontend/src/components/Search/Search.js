@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import { Table } from 'reactstrap';
 import axios from "axios";
 import { hostAddress, port } from "../../config";
 import Modal from "react-modal";
@@ -117,9 +118,9 @@ class Search extends Component {
     let display = null;
     let redirec = null;
     let tablecontent=[];
-    if (localStorage.getItem("email") == null) {
-      redirec = <Redirect to="/home" />;
-    }
+    // if (localStorage.getItem("email") == null) {
+    //   redirec = <Redirect to="/home" />;
+    // }
 if(!this.state.searchFlag){
   
   display=(  <Row >
@@ -174,12 +175,12 @@ display=(
     <span style={{justifyContent:"space-evenly", marginTop:"0px",fontSize:"18px", color:"black"}}><b>Location :</b>  </span>
     <span>{this.state.searchText}</span>  
     </div>
-    <table class="table" align="center" border="5px solid black" style={{backgroundColor:"white", width:"400px", margin:"10px 0% 30% 35%" }}>    
+    <table  class="table" align="center"  style={{backgroundColor:"white", width:"400px", margin:"10px 0% 30% 35%", fontSize:"15px" }}>    
     <thead>
       <th>Disease</th>
       <th>Drug</th>
       </thead>                    
-                        <tbody>
+                        <tbody  >
                           
                             {/*Display the Tbale row based on data recieved*/}
                             {tablecontent}
