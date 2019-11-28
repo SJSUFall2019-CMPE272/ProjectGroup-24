@@ -1,0 +1,598 @@
+Index,Diseases
+1, 
+2,Pneumocystis pneumonia
+3,CRKP 
+5,Body Lice
+6,Glanders
+7,Head Lice
+8,MRSA
+9,Typhoid Fever
+11,MAC
+13,Chlamydia
+14,Pathogenic Fungi
+15,SFGR
+16,Serotype b
+17,Serotype b
+18,Cryptococcosis
+20,Amebiasis
+21,Pneumonia
+22,ACE (Adverse Childhood Experiences)
+23,ADHD (Attention Deficit Hyperactivity Disorder)
+24,AFib
+25,AHF (Alkhurma Hemorrhagic Fever)
+26,AIDS (Acquired Immune Deficiency Syndrome)
+27,AIDS (Acquired Immunodeficiency Syndrome)
+28,ALS (Amyotrophic Lateral Sclerosis)
+29,Abdominal Aortic Aneurysm
+30,AIDS (Acquired Immune Deficiency Syndrome)
+32,Adenovirus
+34,ACE (Adverse Childhood Experiences)
+35,African Trypanosomiasis
+37,AHF (Alkhurma hemorrhagic fever)
+38,Alzheimers
+39,Amebiasis
+41,American Trypanosomiasis
+43,ALS (Amyotrophic Lateral Sclerosis)
+44,Anaplasmosis
+46,Anisakiasis 
+47,Anthrax 
+51,Aortic Aneurysm
+53,Arthritis
+54,Ascariasis
+55,Aseptic Meningitis
+56,Asthma
+57,AFib (Atrial fibrillation)
+59,Autism
+60,Avian Influenza
+61,BCG Tuberculosis
+62,BSE Bovine Spongiform Encephalopathy
+63,BSE Mad Cow Disease
+64,BV Bacterial Vaginosis
+65,Babesiosis 
+66,Back Belts
+67,Bacterial Meningitis
+68,BV (Bacterial Vaginosis)
+69,Balantidiasis
+70,Bilharzia
+71,Bioterrorism AgentsDiseases
+72,Bird Flu
+73,Birth Defects
+74,Pneumoconioses
+75,Blastomycosis 
+76,Blood Disorders
+78,Borreliosis
+79,Botulism 
+80,BSE (Bovine Spongiform Encephalopathy)
+81,Brainerd Diarrhea
+82,Breast Cancer
+83,Ovarian Cancer
+85,Bronchitis
+86,Brucellosis
+87,CCHF (Crimean Congo Hemorrhagic Fever)
+88,CDI (Chronic Disease Indicators)
+89,CHHF (Chapare Hemorrhagic Fever)
+90,CHIKV (Chikungunya Fever)
+92,CKD (Chronic Kidney Disease)
+93,CKD (Kidney Disease)
+94,COPD (Chronic Obstructive Pulmonary Disease)
+95,CRE (Carbapenemresistant Enterobacteriaceae)
+96,CRKP (Carbapenem Resistant) 
+97,CTE (Chronic Traumatic Encephalopathy)
+98,CTF (Colorado Tick Fever)
+99,CWD (Chronic Wasting Disease)
+100,Campy 
+101,Campylobacteriosis
+102,Cancer
+105,Candidiasis
+106,Canine Flu
+107,Capillariasis
+108,Carbapenem
+109,CRE (Carbapenemresistant Enterobacteriaceae)
+110,Cardiovascular Heart Disease
+111,Carpal Tunnel Syndrome
+112,Carrins
+113,Cat Flea Tapeworm
+114,Cat Scratch Disease
+116,Cercarial Dermatitis
+117,Cerebral Palsy
+118,Cervical Cancer
+119,Chagas Disease 
+120,CHHF (Chapare Hemorrhagic Fever)
+121,Chest Cold
+122,Chickenpox
+125,Childhood Arthritis
+129,Chlamydia 
+130,Cholera 
+131,CDI (Chronic Disease Indicators)
+133,Chronic Fatigue Syndrome
+134,CKD (Chronic Kidney Disease)
+135,COPD (Chronic Obstructive Pulmonary Disease)
+136,CTE (Chronic Traumatic Encephalopathy)
+137,CWD (Chronic Wasting Disease)
+138,Ciguatera Fish Poisoning
+139,Ciguatoxin
+140,CJD (Classic CreutzfeldtJakob Disease)
+141,Clonorchiasis
+142,Clotting Disorders
+143,Coal Workers Pneumoconioses 
+144,Coccidioidomycosis
+145,Cold
+146,CTF (Colorado Tick Fever)
+148,Colorectal Cancer and Genetics
+149,Colorectal Colon Cancer
+150,Common Cold
+151,Concussion 
+152,Congenital Hearing Loss
+153,Congenital Heart Defects
+154,Conjunctivitis 
+155,Cooleys Anemia
+157,CreutzfeldtJakob
+158,Crohns Disease  see Inflammatory Bowel Disease
+159,Cryptococcosis
+160,Cryptosporidiosis
+161,Cyclosporiasis
+162,Cysticercosis
+163,Cystoisosporiasis
+164,DF (Dengue Fever)
+165,DHF (Dengue Hemorrhagic Fever)
+167,DVT (Deep Vein Thrombosis)
+169,DVT (Deep Vein Thrombosis)
+170,DF (Dengue Fever)
+171,DHF (Dengue Hemorrhagic Fever)
+172,Developmental Disabilities
+173,Diabetes
+175,Diphtheria 
+177,Diphyllobothriasis
+178,Dirofilariasis Dog Heartworm
+181,Dog Bites
+182,Dog Flea Tapeworm
+183,Dog Heartworm
+185,Down Syndrome Trisomy 21
+186,Dracunculiasis
+188,Dwarf Tapeworm 
+189,EEE (Eastern Equine Encephalitis)
+191,EVD (Ebola Virus Disease)
+192,EVD68 (Enterovirus D68)
+195,EVD (Ebola Virus Disease)
+196,Echinococcosis
+197,Ehrlichiosis
+198,Elephantiasis
+199,Emerging Infectious Diseases
+200,Endophthalmitis
+203,Epidemic Typhus
+204,Epilepsy
+205,Ergonomic and Musculoskeletal Disorders
+206,Esophageal Candidiasis 
+208,Extreme Cold Hypothermia
+212,FXS (Fragile X Syndrome)
+220,Fasciitis
+221,Fascioliasis
+222,Fasciolopsiasis
+223,Fetal Alcohol Spectrum Disorders
+224,Fibromyalgia
+226,Filariasis
+228,FlavoringsRelated Lung Disease
+229,Flu
+233,Folliculitis
+234,Food Poisoning
+236,Foodborne Illness
+238,Fungal Meningitis
+239,Fungal Pneumonia
+242,GAE (Granulomatous Amebic Encephalitis)
+244,Gastrointestinal Diseases
+245,Genetics and Colorectal Cancer
+248,Genetics and Obesity
+249,Genetics and Skin Cancer
+250,Genetics and Stroke
+251,Genital Candidiasis VVC Vulvovaginal Candidiasis
+252,German Measles Rubella Virus
+253,Giardiasis
+254,Glanders 
+258,Gnathostomiasis 
+259,Gonorrhea 
+260,Gout
+263,GuillainBarr Syndrome
+265,Gynecologic Cancers
+266,H1N1 Flu
+267,H3N2v influenza
+269,HAB (Harmful Algal Bloom)
+270,HFMD Hand
+273,HPIV (Human Parainfluenza Viruses)
+274,HPS (Hantavirus Pulmonary Syndrome)
+279,Hansens Disease
+280,HPS (Hantavirus Pulmonary Syndrome)
+282,Hazardous Drug Exposures
+283,Head Lice 
+292,Hearing loss
+295,Heat Stress
+296,Hemoglobinopathies
+297,Hemophilia
+299,Hemorrhagic Fevers
+300,Hepatitis
+303,Hereditary Bleeding Disorders
+304,Herpes
+305,Herpes Zoster
+307,Heterophyiasis
+308,Hib Vaccine 
+309,High Blood Pressure
+310,Histoplasmosis 
+311,Histoplasmosis
+312,Hookworm
+314,Hot Tub Rash 
+315,Human Ehrlichiosis
+319,Hypertension
+320,Hyperthermia
+321,Hypothermia
+322,IBD (Inflammatory Bowel Disease)
+324,Infertility
+325,IBD (Inflammatory Bowel Disease)
+326,Influenza
+332,Invasive Candidiasis
+333,JE Japanese Encephalitis
+335,Japanese Encephalitis JE
+337,Jaundice
+338,KD (Kawasaki Disease)
+339,KFD (Kyasanur Forest Disease)
+340,KalaAzar
+341,KD (Kawasaki Disease)
+342,Kawasaki Syndrome
+343,Keratitis
+344,Kernicterus
+345,CKD (Chronic Kidney Disease)
+346,KFD (Kyasanur Forest Disease)
+347,LAC (La Crosse Encephalitis)
+349,LBRF Relapsing Fever
+350,LCM (Lymphocytic Choriomeningitis)
+351,LUHF (Lujo Hemorrhagic Fever)
+352,La Crosse Encephalitis LAC
+353,La Crosse Encephalitis virus LACV  see La Crosse Encephalitis
+354,Lassa Fever
+355,Latex Allergies
+356,Lead Poisoning
+357,Legionellosis 
+358,Legionnaires Disease Legionellosis
+359,Leishmaniasis  
+360,Leprosy
+361,Leptospirosis  
+362,Lice
+363,Listeriosis  
+364,Liver Disease and Hepatitis
+365,Lockjaw
+367,Loiasis 
+368,Lou Gehrigs Disease
+369,Louseborne Relapsing Fever 
+370,Lujo Hemorrhagic Fever LUHF
+371,Lung Cancer
+372,Lupus SLE Systemic lupus erythematosus
+373,Lyme Disease 
+374,Lymphatic Filariasis
+375,Lymphedema  see Lymphatic Filariasis
+376,Lymphocytic Choriomeningitis LCM
+377,MAC 
+378,MD Muscular Dystrophy
+379,MDR TB MultidrugResistant TB
+380,MECFS Myalgic Encephalomyelitis Chronic Fatigue Syndrome
+381,MERSCoV Middle East Respiratory Syndrome Coronavirus
+382,MMR Vaccination
+383,MRSA Methicillin Resistant 
+384,Mad Cow Disease BSE
+385,Malaria
+386,Marburg Hemorrhagic Fever
+387,Marine Toxins
+388,Measles
+390,Melioidosis 
+391,Meningitis
+392,Meningococcal Disease
+394,Mental Health
+395,Mental Health and Genetics
+396,Mental Retardation
+397,Methicillin Resistant 
+398,Microcephaly
+399,Micronutrient Malnutrition
+400,Middle East Respiratory Syndrome Coronavirus MERSCoV
+401,Molluscum Contagiosum
+402,Monkeypox
+403,Mononucleosis
+404,Motor Vehicle Injuries
+405,Mouse and Rat Control
+406,Mucormycosis
+407,Mucus
+408,MultidrugResistant TB MDR TB
+409,Multiple organ dysfunction syndrome
+410,Mumps
+411,Mumps Vaccination
+412,Murine Typhus
+413,Muscular Dystrophy MD
+414,Musculoskeletal Disorders
+415,Myalgic Encephalomyelitis Chronic Fatigue Syndrome MECFS
+416,Mycotic diseases
+417,Myelomeningocele
+418,Myiasis
+419,NTD Neglected Tropical Diseases
+420,National Amyotrophic Lateral Sclerosis ALS Registry
+421,Neglected Tropical Diseases NTD
+422,Neurocysticercosis
+423,Newborn Hearing
+424,Newborn Jaundice Kernicterus
+425,Nocardia 
+426,Nocardiosis Nocardia 
+427,Nonpathogenic Harmless Intestinal Protozoa
+428,Nutrition
+429,OA Osteoarthritis
+430,OHF Omsk hemorrhagic fever
+431,Obesity and Genetics
+432,Obesity and Overweight
+433,Occupational Cancers
+434,Occupational Skin Conditions
+435,Occupational Stress
+436,Omsk hemorrhagic fever OHF
+437,Onchocerciasis
+438,Oral Cancer
+439,Oropharyngeal Candidiasis
+440,Oroya fever
+441,Osteoarthritis OA
+442,Outbreaks
+443,Ovarian Cancer
+444,Ovarian and Breast Cancer
+445,Overweight and Obesity
+447,PAD Peripheral Arterial Disease
+448,PCP Pneumocystis pneumonia
+449,PCV Pneumococcal Conjugate Vaccine
+450,PE Pulmonary Embolism
+451,PID Pelvic Inflammatory Disease
+452,PPV Pneumococcal Polysaccharide Vaccine
+453,Pandemic Flu
+454,Paragonimiasis  see 
+455,Parainfluenza  see Human Parainfluenza Viruses
+456,Parasitic Diseases
+457,Pedestrian Injury
+458,Pelvic Inflammatory Disease PID
+459,People at High Risk
+460,Peripheral Arterial Disease PAD
+461,Peripheral Arterial Insufficiency
+462,Peripheral Arterial Occlusive Disease
+463,Peripheral Vascular Disease
+464,Pertussis Whooping Cough
+466,PetRelated Diseases
+467,Phthiriasis
+468,Pigs
+469,Pink Eye Conjunctivitis
+470,Plague 
+471,Pneumococcal Conjugate Vaccine PCV
+472,Pneumococcal Disease
+473,Pneumococcal Polysaccharide
+474,Pneumoconioses
+475,Pneumocystis pneumonia PCP 
+476,Pneumonia
+477,Polio
+479,Pontiac Fever
+480,Powassan POW virus
+482,Primary Amebic Meningoencephalitis PAM
+483,Prion Diseases TSEs Transmissible spongiform encephalopathies
+484,Prostate Cancer
+485,Psittacosis 
+486,Psoriasis
+487,Pubic Lice Phthiriasis
+488,Pulmonary Embolism PE
+489,Pulmonary Hypertension
+490,Q Fever 
+491,RA Rheumatoid Arthritis
+492,RBF RatBite Fever
+493,RMSF Rocky Mountain Spotted Fever
+494,RVF Rift Valley Fever
+495,RWI Recreational Water Illness
+496,Rabies
+498,RatBite Fever RBF 
+499,Recalled Vaccines
+500,Recreational Water Illness RWI
+501,Relapsing Fever
+502,Reptiles
+503,Rheumatoid Arthritis RA
+504,Rickettsial Diseases
+505,Rift Valley Fever RVF
+506,Ringworm from Animals
+507,River Blindness Onchocerciasis
+508,Rocky Mountain Spotted Fever RMSF 
+511,Rodents
+512,Rotavirus
+513,Rubella German Measles
+514,Rubeola
+515,Runny Nose
+516,SARS Severe Acute Respiratory Syndrome
+517,SFGR Spotted Fever Group 
+518,SIDS Sudden Infant Death Syndrome
+519,SLE Lupus
+520,STARI Southern TickAssociated Rash Illness
+521,STDs Sexually Transmitted Diseases
+522,STDs and HIVAIDS
+523,STEC Shiga toxinproducing E coli
+524,Salmonellosis  see 
+526,Scabies
+527,Schistosomiasis 
+528,Screening for Critical Congenital Heart Defects
+529,Scrub Typhus
+530,Seasonal Flu
+531,Seizure disorder
+532,Sepsis Septicemia
+533,Septic shock
+534,Septicemia
+535,Severe Acute Respiratory Syndrome
+536,Sexually Transmitted Disease
+537,Sexually Transmitted Diseases STDs
+538,Shiga toxinproducing E coli STEC 
+539,Shigellosis 
+540,Shingles Vaccination
+541,Shingles Varicella Zoster Virus VZV
+542,Sickle Cell Disease
+543,Skin Cancer
+544,Skin Cancer and Genetics
+545,Skin Conditions
+546,Sleep and Sleep Disorders
+547,Sleeping Sickness African Trypanosomiasis
+548,Smallpox
+551,Soil Transmitted Helminths
+552,Sore Throat
+553,Southern TickAssociated Rash Illness STARI
+554,Spina Bifida Myelomeningocele
+555,Sporothrix schenckii infection
+556,Sporotrichosis
+557,Sporotrichosis Sporothrix schenckii infection
+558,Spotted Fever Group 
+559,Staph  see 
+560,Stress
+561,Stroke
+562,Stroke and Genetics
+563,Sudden Infant Death Syndrome SIDS
+564,Surveillance Reports
+565,Swimmers Itch Cercarial Dermatitis
+566,Swimmingrelated Illness
+567,Swine Influenza
+568,Syphilis 
+569,Systemic lupus erythematosus
+575,TB
+576,TB and HIV Coinfection
+577,TB
+578,TB in AfricanAmericans
+579,TBI Traumatic Brain Injury
+580,TBRF Relapsing Fever
+581,TS Tourette Syndrome
+582,TSEs Prion Diseases
+583,Tapeworm
+584,Testicular Cancer
+585,Tetanus Disease 
+586,Tetanus Lockjaw Vaccination
+587,Thalassemia
+588,Thoracic Aortic Aneurysm
+590,Thrombophilia
+591,Thrombosis  see Clotting Disorders
+592,Thrush Oropharyngeal Candidiasis
+593,Tickborne Diseases 
+594,Tickborne Relapsing Fever
+595,Ticks
+596,Tinea
+597,Tobacco Use
+598,Tourette Syndrome TS
+599,Toxocariasis 
+600,Toxoplasmosis 
+601,Transmissible spongiform encephalopathies
+602,Traumatic Brain Injury TBI
+603,Traumatic Occupational Injuries
+604,Trench fever 
+605,Trichinellosis Trichinosis
+606,Trichomoniasis 
+607,Trisomy 21
+608,Trypanosomiasis
+609,Tuberculosis Skin Test
+610,Tuberculosis TB 
+611,Tuberculosis TB Vaccination
+612,Tuberculosis Training
+613,Tuberculosis Vaccine BCG
+614,Tuberculosis and HIV Coinfection
+615,Tularemia 
+616,Typhoid Fever 
+617,Typhoid Fever Vaccination
+618,Typhus Fevers
+619,URDO Unexplained Respiratory Disease Outbreaks
+620,Ulcerative Colitis
+621,Undulant Fever
+622,Unexplained Respiratory Disease Outbreaks URDO
+623,Universal Newborn Hearing Screening
+624,Uterine Cancer
+625,VHF Viral Hemorrhagic Fevers
+626,VISAVRSA
+627,VVC Genital Candidiasis
+628,VWD Von Willebrand Disease
+629,VZV Varicella Zoster Virus
+630,Vaccination
+631,Vaginal Candidiasis
+632,Vaginal and Vulvar Cancers
+633,Valley Fever Coccidioidomycosis
+634,VancomycinIntermediateResistant 
+635,Variant CreutzfeldtJakob Disease vCJD
+636,Variant Viruses
+637,Varicella Disease
+638,Varicella Vaccination
+639,Varicella Zoster Virus VZV
+640,Vibrio Illness Vibriosis
+641,Vibriosis 
+642,Viral Hemorrhagic Fevers VHF
+643,Viral Hepatitis
+644,Viral Meningitis Aseptic Meningitis
+645,Vision Impairment
+646,Von Willebrand Disease
+647,Vulvovaginal Candidiasis
+648,Weight
+649,Whitmores Disease
+650,Whooping Cough 
+651,Whooping Cough Pertussis Vaccination
+652,Wildlife
+653,Winter Storms 
+654,Womens Bleeding Disorders
+655,Womens Health
+656,XDR TB Extensively DrugResistant TB
+657,Yellow Fever
+658,Yellow Fever Vaccination
+659,Yersiniosis 
+660,Zoonotic Diseases
+661,Zoonotic Hookworm
+662,Zoonotic enteric diseases 
+663,Zoster  
+664,Zygomycosis 
+665,blood clot
+666,cyanobacterial algal bloomassociated illness  Harmful Algal Bloom HABAssociated Illness
+667,microalgal bloomassociated illness Harmful Algal Bloom HABAssociated Illness
+669,noise exposure Hearing loss
+670,Breast and Ovarian Cancer
+672,Cancer
+673,Coronavirus CoV
+674,Costeffective Rollover Protective Structures CROPS
+675,Diphtheria 
+676,Epilepsy
+677,Fungal Meningitis
+678,Fungal diseases Mycotic diseases
+680,Genetics and Genomics
+684,Heart Disease Cardiovascular Health
+685,High Blood Pressure
+687,Influenza
+688,Measles
+689,Measles Vaccination
+690,Meningitis
+691,Meningococcal Disease
+692,Mental Health
+694,Psittacosis 
+696,Skin Cancer
+697,Stroke
+698,Ticks
+699,Traumatic Brain Injury TBI
+700,Variant Viruses Influenza
+701,surgical site infection SSI
+702,vCJD Variant CreutzfeldtJakob Disease
+703,verruga peruana Carrins disease
+354,Lassa Fever
+355,Latex Allergies
+356,Lead Poisoning
+357,Legionellosis 
+358,Legionnaires Disease Legionellosis
+359,Leishmaniasis  
+360,Leprosy
+361,Leptospirosis  
+362,Lice
+363,Listeriosis  
+364,Liver Disease and Hepatitis
+365,Lockjaw
+367,Loiasis 
+368,Lou Gehrigs Disease
+369,Louseborne Relapsing Fever 
+370,Lujo Hemorrhagic Fever LUHF
+371,Lung Cancer
+372,Lupus SLE Systemic lupus erythematosus
+373,Lyme Disease 
+374,Lymphatic Filariasis
+375,Lymphedema  see Lymphatic Filariasis
+376,Lymphocytic Choriomeningitis LCM
+377,MAC 
+378,MD Muscular Dystrophy
+379,MDR TB MultidrugResistant TB
+380,MECFS Myalgic Encephalomyelitis Chronic Fatigue Syndrome
+381,MERSCoV Middle East Respiratory Syndrome Coronavirus
+382,MMR Vaccination
