@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var kafka = require('../kafka/client');
 
-router.get('/searcgstate',function(req,res){
+router.post('/searchstate',function(req,res){
 
   let body = req.body;
   console.log("Inside API of Get Location", body)

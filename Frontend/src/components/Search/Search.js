@@ -72,12 +72,16 @@ class Search extends Component {
      searchText:"",
      regions:[],
      searchFlag:false,
-     searchResult:[{"disease":"Disease","drug":["drug 1, drug 2"]},{"disease":"Disease","drug":["drug 1, drug 2"]},{"disease":"Disease", "drug":["drug 1, drug 2"]}]
-    };
+    //  searchResult:[{"disease":"Disease","drug":["drug 1, drug 2"]},{"disease":"Disease","drug":["drug 1, drug 2"]},{"disease":"Disease", "drug":["drug 1, drug 2"]}]
+    searchResult:[]
+   
+  };
    
     this.inputChangeHandler = this.inputChangeHandler.bind(this);
   
   }
+
+
   //get the books data from backend
   componentWillMount() {
     axios.defaults.withCredentials = true;
@@ -107,21 +111,41 @@ class Search extends Component {
   };
   
   selectHandle=e=>{
-    alert(e);
+    //alert(e);
+console.log(e)
+const data={
+  region:e.toString()
+}
+console.log("Alaukika's data",data)
+    axios.defaults.withCredentials = true;
+    axios
+      .post(
+        "http://" + hostAddress + ":" + port + "/searchlocation/searchlocation",data
+      )
+      .then(response => {
+        console.log(response.data);
+        
+      
     this.setState({
-      searchFlag:true
+      searchFlag:true,
+      searchText:data.region,
+      searchResult:this.state.searchResult.concat(response.data.details)
     });
+  })
   }
 
   render() {
     let display = null;
     let redirec = null;
+    let displayRegion=[];
     let tablecontent=[];
     if (localStorage.getItem("email") == null) {
       redirec = <Redirect to="/home" />;
     }
 if(!this.state.searchFlag){
-  
+  this.state.regions.map(item=>{
+displayRegion.push(<Dropdown.Item eventKey={item}>{item}</Dropdown.Item>)
+  })
   display=(  <Row >
     <Dropdown onSelect={(selected)=>{this.selectHandle(selected)}} style={{
       width:"400px",
@@ -137,9 +161,8 @@ if(!this.state.searchFlag){
     </Dropdown.Toggle>
 
     <Dropdown.Menu as={CustomMenu}>
-      <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-      <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-      <Dropdown.Item eventKey="3">Red-Orange</Dropdown.Item>
+      {displayRegion}
+     
     </Dropdown.Menu>
   </Dropdown>
   
@@ -163,21 +186,30 @@ if(!this.state.searchFlag){
 )
 }else{
   let details=this.state.searchResult.map(item=>{
-    tablecontent.push(<tr><td  style={{}}>{item.disease}</td><td  style={{}}>{item.drug}</td></tr>
+    if(item.Drug1!=null && item.Drug3!=null && item.Drug2!=null)
+    tablecontent.push(<tr><td  style={{}}>{item.Disease}</td><td  style={{}}>{item.Drug1},{item.Drug2},{item.Drug3}</td></tr>
     )
-
+    else if(item.Drug1==null )
+    tablecontent.push(<tr><td  style={{}}>{item.Disease}</td><td  style={{}}>No Drugs For this one! :(</td></tr>
+      )
+    else if(item.Drug1!=null && item.Drug2==null )
+    tablecontent.push(<tr><td  style={{}}>{item.Disease}</td><td  style={{}}>{item.Drug1}</td></tr>
+      )
+    else if(item.Drug1!=null && item.Drug3==null && item.Drug2!=null)
+    tablecontent.push(<tr><td  style={{}}>{item.Disease}</td><td  style={{}}>{item.Drug1},{item.Drug2}</td></tr>
+      )
     })
 
 display=(
 <div class="container" style={{backgroundSize:"100% 100%"}}>
   <div style={{textAlign:"left", marginTop:"180px", marginLeft:"390px"}}>
     <span style={{justifyContent:"space-evenly", marginTop:"0px",fontSize:"18px", color:"black"}}><b>Location :</b>  </span>
-    <span>{this.state.searchText}</span>  
+    <span style={{justifyContent:"space-evenly", marginTop:"0px",fontSize:"18px", color:"black"}}><b>{this.state.searchText}</b></span>  
     </div>
     <table class="table" align="center"   style={{backgroundColor:"#c7d9e6", width:"400px", margin:"10px 0% 30% 35%" }}>    
     <thead>
-      <th>Disease</th>
-      <th>Drug</th>
+      <th>Disease in the Region</th>
+      <th>Drugs you may need to stock</th>
       </thead>                    
                         <tbody>
                           

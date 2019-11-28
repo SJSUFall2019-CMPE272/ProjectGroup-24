@@ -1,11 +1,11 @@
-var Location=require('../models/Location');
+var DiseaseDrugRegions=require('../models/DiseaseDrugRegions');
 
 function handle_request(msg, callback){
   
    console.log("Inside search Location");  
    var pkg={};
-console.log(msg);
-     Location.find({},function(error, results){
+console.log("Alaukika received:",msg);
+DiseaseDrugRegions.find({Region:msg.region},{},{limit:5, sort:{ Value: -1 }},function(error, results){
          if (error){
                 console.log(error);
                 pkg={

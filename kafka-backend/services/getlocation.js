@@ -1,11 +1,12 @@
-var Location=require('../models/Location');
+var DiseaseDrugRegions=require('../models/DiseaseDrugRegions');
 
 function handle_request(msg, callback){
   
    console.log("Inside Get Location");  
    var pkg={};
 //db.inventory.distinct( "dept" )
-     Location.find({},function(error, results){
+
+DiseaseDrugRegions.distinct("Region",function(error, results){
          if (error){
                 console.log(error);
                 pkg={

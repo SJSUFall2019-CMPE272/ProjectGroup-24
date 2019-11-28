@@ -1,11 +1,11 @@
-var Location=require('../models/Location');
+var DiseaseDrugRegions=require('../models/DiseaseDrugRegions');
 
 function handle_request(msg, callback){
   
    console.log("Inside search State");  
    var pkg={};
    console.log(msg);
-     Location.find({},function(error, results){
+   DiseaseDrugRegions.find({State:msg.state},{},{limit:5, sort:{ Value: -1 }},function(error, results){
          if (error){
                 console.log(error);
                 pkg={

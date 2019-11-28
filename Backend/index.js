@@ -40,8 +40,8 @@ app.use(function(req, res, next) {
   var profileRouter=require('./src/Profile');
   var updateprofileRouter=require('./src/UpdateProfile');
   var getLocationRouter=require('./src/GetLocation');
-  var searchLocationRouter=require('./src/GetLocation');
-  var searchStateRouter=require('./src/GetLocation');
+  var searchLocationRouter=require('./src/SearchLocation');
+  var searchStateRouter=require('./src/SearchState');
 
   app.use('/login',loginRouter);
   app.use('/signUp',signupRouter);
