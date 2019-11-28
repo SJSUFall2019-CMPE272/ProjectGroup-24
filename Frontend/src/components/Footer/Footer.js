@@ -21,32 +21,32 @@ class Home extends Component {
             <h4>Services</h4>
             <ul class="footer-link list-unstyled">
               <li>
-                <a href="#">DD Map</a>
+                <a href="/map">DD Map</a>
               </li>
               <li>
-                <a href="#">Urgent Care</a>
+                <a href="/login">Drug Search</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Drug Care</a>
               </li>
               
               <li>
                 <a href="#">Online Services</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div class="col-md-3 mb-5">
-            <h4>Latest News</h4>
+            <h4>Latest Features</h4>
             <ul class="footer-link list-unstyled">
               <li>
-                <a href="#">News &amp; Press Releases</a>
+                <a href="#">Data from Google Trends</a>
               </li>
-              <li>
-                <a href="#">Health Care Professional News</a>
+             <li>
+                <a href="#">Prediction Analysis</a>
               </li>
-              <li>
-                <a href="#">Events &amp; Conferences</a>
-              </li>
+              {/*  <li>
+                 <a href="#">Events &amp; Conferences</a>
+               </li> */} 
             </ul>
           </div>
           <div class="col-md-3 mb-5">
@@ -58,12 +58,12 @@ class Home extends Component {
               <li>
                 <a href="/contactus">Feedback</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Accreditations &amp; Awards</a>
               </li>
               <li>
                 <a href="#">Careers</a>
-              </li>
+              </li> */}
              
             </ul>
           </div>

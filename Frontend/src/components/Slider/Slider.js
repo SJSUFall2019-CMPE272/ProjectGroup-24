@@ -2,19 +2,23 @@ import React, {Component} from 'react';
 import '../../App.css';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+import { hostAddress, port } from "../../config";
 
 class Slider extends Component {
     constructor(){
         super(); 
+        this.state={
+            slider1:"http://"+hostAddress+":"+port+"/images/slider1.jpeg",
+        }
     }  
  
     render(){
         return(
             
             <AwesomeSlider class="home">
-            <div data-src="https://www.longprairiepharmacy.com/wp-content/themes/longprairie/images/slider/5.jpg" />
-            <div data-src="https://s3.amazonaws.com/utpimg.com/ptcb-pharmacy-technician-certification-exam/-p-t-c-b-pharmacy.jpg" />
-            <div data-src="http://www.nationalhealthexecutive.com/write/MediaUploads/iStock-1154962393.jpg" />
+            <div data-src={require('./slider1.jpeg')} />
+            <div data-src={require('./slider2.jpeg')} />
+            <div data-src={require('./slider3.jpeg')}  />
           </AwesomeSlider>
           
         )

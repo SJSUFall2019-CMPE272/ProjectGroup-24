@@ -91,60 +91,64 @@ class SignUp extends Component {
           className="col-sm-8"
           style={{
             backgroundImage:
-              "url(https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1)",
+              "url(https://i.pinimg.com/originals/02/2e/96/022e9691c5ba65d23cbf27a53f83163e.jpg)",
             height: "700px"
           }}
         >
-          <img
+          {/* <img
             style={{ width: "100%" }}
             src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
-          ></img>
+          ></img> */}
         </Col>
-        <Col className="col-sm-3">
+        <Col className="col-sm-4" style={{backgroundColor:"#fefefe"}}>
           <br></br>
           <Form>
-            <Form.Group controlId="formFullName">
-              <Form.Label>Full Name</Form.Label>
+            <Form.Group controlId="formFullName" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Full Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Full Name"
                 name="fullname"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email Address</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Email Address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Email"
                 name="email"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Mobile</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Mobile</Form.Label>
               <Form.Control
                 type="number"
                 placeholder="Mobile"
                 name="mobile"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Address</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Address</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Address"
                 name="address"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>City</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}> 
+              <Form.Label style={{marginLeft:"5px"}}>City</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="City"
@@ -153,48 +157,52 @@ class SignUp extends Component {
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Country</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Country</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Country"
                 name="country"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Zipcode</Form.Label>
+            <Form.Group controlId="formBasicEmail" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Zipcode</Form.Label>
               <Form.Control
                 type="number"
                 placeholder="Zipcode"
                 name="zipcode"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+            <Form.Group controlId="formBasicPassword" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Password"
                 name="password"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Confirm Password</Form.Label>
+            <Form.Group controlId="formBasicPassword" style={{width:"60%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Confirm Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Confirm Password"
                 name="confirmpassword"
                 onChange={this.inputChangeHandler}
+                style={{height:"30px", fontSize:"13px"}}
               />
             </Form.Group>
 
             <Button
-              style={{ float: "right" }}
+              style={{ float: "left", marginLeft:"65%" }}
               onClick={this.registerUser}
               variant="primary"
               type="submit"
@@ -204,7 +212,7 @@ class SignUp extends Component {
           </Form>
           <br></br>
           <div style={{ paddingTop: "10px" }}>
-            <a href="/login" style={{ textAlign: "center" }}>
+            <a href="/login" style={{ textAlign: "left", marginLeft:"16%" }}>
               Already a Member? Sign In!
             </a>
           </div>

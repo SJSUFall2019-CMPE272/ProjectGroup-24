@@ -6,6 +6,7 @@
     "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
     "country-list": "^2.2.0",
+    "fusioncharts": "^3.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-awesome-slider": "^2.2.1",
@@ -13,6 +14,7 @@
     "react-cookie": "^3.0.4",
     "react-cookies": "^0.1.0",
     "react-dom": "^16.11.0",
+    "react-fusioncharts": "^3.0.1",
     "react-google-login": "^5.0.7",
     "react-jvectormap": "0.0.14",
     "react-modal": "^3.11.1",
@@ -21,6 +23,7 @@
     "react-scripts": "^3.2.0",
     "react-simple-maps": "^1.0.0-beta.0",
     "react-split-pane": "^0.1.89",
+    "react-usa-map": "^1.4.0",
     "reactstrap": "^8.1.1",
     "semantic-ui-react": "^0.88.1"
   },

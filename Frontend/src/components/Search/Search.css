@@ -5,13 +5,20 @@ justify-content: space-evenly;
 position: fixed;
 top:50%;
 bottom:50%;
-background-image: url(http://united-rx.com/wp-content/uploads/2016/07/shutterstock_medicine_tablets.jpg) !important;
+/* background-image: url(http://united-rx.com/wp-content/uploads/2016/07/shutterstock_medicine_tablets.jpg) !important; */
+background-image: url(https://cgx3j41r03fwkmmdtoy3l6aq-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/tablets-and-capsules-750x536.jpg) !important;
 /* background-color: white; */
-
-background-size: cover;
+background-size: "200%";
+background-repeat: repeat;
 }
 
 .userhome{
-    background-image: url(http://united-rx.com/wp-content/uploads/2016/07/shutterstock_medicine_tablets.jpg) !important;
+    background-image: url(https://familiesusa.org/wp-content/uploads/2019/07/Prescription-Drugs.jpg) !important;
+
+    /* background-image: url(http://united-rx.com/wp-content/uploads/2016/07/shutterstock_medicine_tablets.jpg) !important; */
     background-size: cover;
+}
+
+.visibleClass{
+    opacity:1 !important;
 }

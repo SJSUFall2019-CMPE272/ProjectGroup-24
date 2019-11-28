@@ -99,7 +99,7 @@ class About extends Component {
               <b>About Us</b>
             </h3>
             <br></br>
-            <h4 class="sub-heading element-animate mb-5">
+            <h4 class="sub-heading element-animate mb-5" >
               Many valuable information regarding the public health and welfare,
               disease outbreaks and their trend are available in the form of
               unstructured data lying in different news portals, Facebook,
@@ -118,8 +118,9 @@ class About extends Component {
             </h4>
             <Button
               color="info"
-              style={{ width: "8%", fontSize: "90%" }}
+              style={{ width: "7%", fontSize: "13px", height:"37px" }}
               onClick={this.openModal}
+            
             >
               Contact Us!
             </Button>
