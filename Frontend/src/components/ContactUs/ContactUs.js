@@ -63,23 +63,23 @@ class ContactUs extends Component {
           className="col-sm-8"
           style={{
             backgroundImage:
-              "url(https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1)",
+              "url(https://i.pinimg.com/originals/02/2e/96/022e9691c5ba65d23cbf27a53f83163e.jpg)",
             height: "700px"
           }}
         >
-          <img
+          {/* <img
             style={{ width: "100%" }}
             src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
-          ></img>
+          ></img> */}
         </Col>
-        <Col className="col-sm-3">
+        <Col className="col-sm-4">
           <div style={{ margin: "10%" }}>
             <h3 class="heading element-animate">
               <b>Contact Us</b>
             </h3>
-            <p class="sub-heading element-animate mb-5">
+            <p class="sub-heading element-animate mb-5" style={{fontSize:"13px"}}>
               We love Feedbacks! </p>
-              <p class="sub-heading element-animate mb-5"> Tell us what you thing about Wellpharma and how
+              <p class="sub-heading element-animate mb-5" style={{fontSize:"13px"}}> Tell us what you thing about Wellpharma and how
               we can improve on it!!
             </p>
             <Form>
@@ -99,6 +99,7 @@ class ContactUs extends Component {
                 onClick={this.submitLogin}
                 variant="primary"
                 type="submit"
+                style={{marginLeft:"88%"}}
               >
                 Send
               </Button>

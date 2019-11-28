@@ -96,7 +96,7 @@ class Login extends Component {
           className="col-sm-8"
           style={{
             backgroundImage:
-              "url(https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1)",
+              "url(https://i.pinimg.com/originals/02/2e/96/022e9691c5ba65d23cbf27a53f83163e.jpg)",
             height: "700px"
           }}
         >
@@ -105,50 +105,54 @@ class Login extends Component {
             src="https://i0.wp.com/www.upinpoole.co.uk/wp-content/uploads/2018/11/background-colour.png?ssl=1"
           ></img> */}
         </Col>
-        <Col className="col-sm-3 home">
+        <Col className="col-sm-4 home" style={{backgroundColor:"#f9f9f9"}}>
           <br></br>
-          <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email Address</Form.Label>
+          <img style={{margin:"0 0 0 25%", height:"100px"}} src="https://www.pharmacienswellpharma.com/wp-content/themes/pharmacienwellpharma/assets/img/logo_WP-bleu-sans-fond.png"></img>
+           <Form style={{marginTop:"10%"}}>
+            <Form.Group controlId="formBasicEmail" style={{width:"50%", marginLeft:"16%"}}>
+              <Form.Label style={{marginLeft:"5px"}}>Email Address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Email"
                 name="email"
+                style={{height:"30px", fontSize:"13px"}}
                 onChange={this.inputChangeHandler}
               />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+            <Form.Group controlId="formBasicPassword" style={{width:"50%", marginLeft:"16%"}}> 
+              <Form.Label style={{marginLeft:"5px"}}>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Password"
                 name="password"
+                style={{height:"30px", fontSize:"13px"}}
                 onChange={this.inputChangeHandler}
               />
             </Form.Group>
 
             <Button
-              style={{ float: "right" }}
+              style={{ float: "left", marginLeft:"53%" , fontSize:"13px"}}
               onClick={this.submitLogin}
-              variant="primary"
+              color="info"
               type="submit"
+              backgroundColor="#00abc9"
             >
               Submit
             </Button>
             {/* <GoogleLogin /> */}
           </Form>
 
-          <GoogleLogin
+          {/* <GoogleLogin
     clientId="1060379313741-aedbu3ftoqsmhjk3moq7sre2ohpd559n.apps.googleusercontent.com"
     buttonText="Login"
     onSuccess={this.responseGoogle}
     onFailure={this.responseGoogle}
     cookiePolicy={'single_host_origin'}
-  />,
+  />, */}
           <br></br>
           <div style={{ paddingTop: "10px" }}>
-            <a href="/signup" style={{ textAlign: "center" }}>
+            <a href="/signup" style={{ textAlign: "left", marginLeft: "-50%", fontSize:"13px" }}>
               Not a Member? Sign Up!
             </a>
           </div>

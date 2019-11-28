@@ -40,6 +40,8 @@ app.use(function(req, res, next) {
   var profileRouter=require('./src/Profile');
   var updateprofileRouter=require('./src/UpdateProfile');
   var getLocationRouter=require('./src/GetLocation');
+  var searchLocationRouter=require('./src/GetLocation');
+  var searchStateRouter=require('./src/GetLocation');
 
   app.use('/login',loginRouter);
   app.use('/signUp',signupRouter);
@@ -47,6 +49,8 @@ app.use(function(req, res, next) {
   app.use('/profile',profileRouter);
   app.use('/updateprofile',updateprofileRouter);
   app.use('/getlocation',getLocationRouter);
+  app.use('/searchlocation',searchLocationRouter);
+  app.use('/searchstate',searchStateRouter);
 
 // app.get('/home', function(req,res){
 //   const { spawn } = require('child_process');

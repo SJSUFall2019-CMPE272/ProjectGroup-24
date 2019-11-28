@@ -23,7 +23,7 @@ class Home extends Component {
              <br></br>
              <br></br>
              <InfoSection/> 
-          
+          <br></br>
              <AboutUs/>
                 
              <Footer/>

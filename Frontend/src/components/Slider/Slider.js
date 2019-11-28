@@ -18,7 +18,7 @@ class Slider extends Component {
             <AwesomeSlider class="home">
             <div data-src={require('./slider1.jpeg')} />
             <div data-src={require('./slider2.jpeg')} />
-            <div data-src="http://www.nationalhealthexecutive.com/write/MediaUploads/iStock-1154962393.jpg" />
+            <div data-src={require('./slider3.jpeg')}  />
           </AwesomeSlider>
           
         )

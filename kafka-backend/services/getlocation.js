@@ -4,7 +4,7 @@ function handle_request(msg, callback){
   
    console.log("Inside Get Location");  
    var pkg={};
-
+//db.inventory.distinct( "dept" )
      Location.find({},function(error, results){
          if (error){
                 console.log(error);

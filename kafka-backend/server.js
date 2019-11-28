@@ -9,6 +9,9 @@ var ContactUs = require("./services/contactus");
 var Profile = require("./services/profile");
 var UpdateProfile = require("./services/updateprofile");
 var GetLocation = require("./services/getlocation");
+var SearchLocation = require("./services/searchlocation");
+var SearchState = require("./services/searchstate");
+
 
 function handleTopicRequest(topic_name, fname) {
   //var topic_name = 'root_topic';
@@ -49,3 +52,5 @@ handleTopicRequest("contactus", ContactUs);
 handleTopicRequest("profile", Profile);
 handleTopicRequest("updateprofile", UpdateProfile);
 handleTopicRequest("getlocation", GetLocation);
+handleTopicRequest("searchlocation", SearchLocation);
+handleTopicRequest("searchstate", SearchState);

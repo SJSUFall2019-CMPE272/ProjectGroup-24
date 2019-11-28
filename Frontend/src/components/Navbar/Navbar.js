@@ -389,7 +389,7 @@ class TopBar extends React.Component {
           <li>
             <NavItem>
               <NavLink
-          href="/userhome" style={{marginRight:"10px"}}
+          href="/userhome" style={{marginRight:"10px",fontSize:"16px"}}
               >
                 <span class="glyphicon glyphicon-search"></span> Search
               </NavLink>{" "}
@@ -398,7 +398,7 @@ class TopBar extends React.Component {
           <li>
             <NavItem>
               <NavLink
-              style={{marginRight:"10px"}}
+              style={{marginRight:"10px",fontSize:"16px"}}
                 colour="danger"
                 onClick={this.openModal}
               >
@@ -409,7 +409,7 @@ class TopBar extends React.Component {
            <li>
             <NavItem>
               <NavLink
-              style={{marginRight:"10px"}}
+              style={{marginRight:"10px",fontSize:"16px"}}
                 colour="danger"
                 onClick={this.handleLogout}
                 href="/login"
@@ -427,7 +427,7 @@ class TopBar extends React.Component {
 
       navLogin = (
         <NavItem>
-          <NavLink colour="danger" href="/login" style={{marginRight:"10px"}}>
+          <NavLink colour="danger" href="/login" style={{marginRight:"10px", fontSize:"16px"}}>
             <span class="glyphicon glyphicon-log-in"></span> Login
           </NavLink>
         </NavItem>

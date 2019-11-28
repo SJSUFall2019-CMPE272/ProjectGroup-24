@@ -174,7 +174,7 @@ display=(
     <span style={{justifyContent:"space-evenly", marginTop:"0px",fontSize:"18px", color:"black"}}><b>Location :</b>  </span>
     <span>{this.state.searchText}</span>  
     </div>
-    <table class="table" align="center" border="5px solid black" style={{backgroundColor:"white", width:"400px", margin:"10px 0% 30% 35%" }}>    
+    <table class="table" align="center"   style={{backgroundColor:"#c7d9e6", width:"400px", margin:"10px 0% 30% 35%" }}>    
     <thead>
       <th>Disease</th>
       <th>Drug</th>

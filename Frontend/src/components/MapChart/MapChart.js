@@ -1,70 +1,63 @@
-import React from "react";
-import { VectorMap } from "react-jvectormap"
-import '../Home/Home.css'
-const { getCode, getName, getData } = require("country-list");
+import React, { Component } from 'react';
+import USAMap from "react-usa-map";
+ import '../../App.css'
+class MapChart extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      selected:"",
+      colorRegion:""
+    }
+  }
+  /* mandatory */
+  mapHandler = (event) => {
+   // alert(event.target.dataset.name);
+    var x=event.target.dataset.name;
+   
+    
+    this.setState({
+      selected:x
+    })
+}
+  
+ 
+  render() {
+    let displayResult=null;
+    if(this.state.selected!=""){
+      displayResult=(
+        <div style={{fontSize:"14px"}}>
+          <b> Showing results for: {this.state.selected}</b>
+          <br></br>
+          
+          <br></br>
+          <table class="table" align="center">
+            <thead style={{backgroundColor:"rgb(27,172,200)", color:"white", textAlign:"center"}}>
+              <th>Disease</th>
+              <th>DMA</th>
+            </thead>
+            <tbody style={{textAlign:"center"}}>
+              <td>Hi</td>
+              <td>Hello</td>
+            </tbody>
+          </table>
+        </div>
+      )
+    }
+    return (
+      <div class="row">
+   <span class="col-8">
+      <div className="App">
+        <USAMap onClick={this.mapHandler} />
+      </div>
+      </span>
+      <span class="col-4">
+        {displayResult}
+      </span>
+      </div>
+    );
+  }
+}
 
+ 
 
-console.log(getName('IS'));  // Iceland
-console.log(getCode('Iceland')); // IS
-console.log(getData())  //gets an array of all countries names & codes: [{code: "AU", name: "Australia"}, ...]
-
-const mapData = {
-  CN: 100000,
-  IN: 0,
-  SA: 86,
-  EG: 70,
-  SE: 0,
-  FI: 0,
-  FR: 0,
-  US: 20,
-};
-
-const handleClick = (e, countryCode) => {
-  console.log(countryCode);
-};
-
-const MapChart = () => {
-  return (
-    <div class="home">
-      <VectorMap
-        map={"world_mill"}
-        backgroundColor="transparent" //change it to ocean blue: #0077be
-        zoomOnScroll={false}
-        containerStyle={{
-          width: "100%",
-          height: "520px"
-        }}
-        onRegionClick={handleClick} //gets the country code
-        containerClassName="map"
-        regionStyle={{
-          initial: {
-            fill: "#e4e4e4",
-            "fill-opacity": 0.9,
-            stroke: "none",
-            "stroke-width": 0,
-            "stroke-opacity": 0
-          },
-          hover: {
-            "fill-opacity": 0.8,
-            cursor: "pointer"
-          },
-          selected: {
-            fill: "#2938bc" //color for the clicked country
-          },
-          selectedHover: {}
-        }}
-        regionsSelectable={true}
-        series={{
-          regions: [
-            {
-              values: mapData, //this is your data
-              scale: ["#146804", "#ff0000"], //your color game's here
-              normalizeFunction: "polynomial"
-            }
-          ]
-        }}
-      />
-    </div>
-  );
-};
-export default MapChart;
+export default MapChart
