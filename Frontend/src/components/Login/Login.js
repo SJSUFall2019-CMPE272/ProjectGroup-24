@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import GoogleLogin from 'react-google-login'
 import "../../App.css";
 import axios from "axios";
 import { Redirect } from "react-router";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import { hostAddress, port } from "../../config";
+
 
 class Login extends Component {
   constructor(props) {
@@ -65,13 +67,29 @@ class Login extends Component {
       });
   };
 
+   responseGoogle = async (response) => {
+    console.log(response);
+    const userObject = {
+      username: response.w3,
+      password: 'test'
+   }
+   if(response.w3) {
+      await localStorage.setItem("user", JSON.stringify(userObject));
+      await window.location.reload();
+   } else {
+
+}
+
+  }
   render() {
     //redirect based on successful login
     let redirectVar = null;
     if (localStorage.getItem("jwtToken")) {
       redirectVar = <Redirect to="/userhome" />;
     }
-
+    // if (localStorage.getItem("user")) {
+    //   redirectVar = <Redirect to="/userhome" />;
+    // }
     return (
       <Row>
         {redirectVar}
@@ -119,7 +137,16 @@ class Login extends Component {
             >
               Submit
             </Button>
+            {/* <GoogleLogin /> */}
           </Form>
+
+          <GoogleLogin
+    clientId="1060379313741-aedbu3ftoqsmhjk3moq7sre2ohpd559n.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={this.responseGoogle}
+    onFailure={this.responseGoogle}
+    cookiePolicy={'single_host_origin'}
+  />,
           <br></br>
           <div style={{ paddingTop: "10px" }}>
             <a href="/signup" style={{ textAlign: "center" }}>
