@@ -162,11 +162,11 @@ class TopBar extends React.Component {
         <div style={{ margin: "0 10% 0 10%" }}>
           <div
             className="row"
-            style={{ fontSize: "30px", justifyContent: "center" }}
+            style={{ fontSize: "24px", justifyContent: "center" }}
           >
             {this.state.fullname}
           </div>
-          <div className="row" style={{ fontSize: "15px" }}>
+          <div className="row" style={{ fontSize: "13px" }}>
             <div className="col-md-6">
               <label>Email:</label>
             </div>
@@ -176,12 +176,12 @@ class TopBar extends React.Component {
           </div>
           <div
             className="row"
-            style={{ fontSize: "20px", justifyContent: "center" }}
+            style={{ fontSize: "13px", justifyContent: "center" }}
           >
             <div className="col-md-6">{this.state.email}</div>
             <div className="col-md-6">{this.state.mobile}</div>
           </div>
-          <div className="row" style={{ fontSize: "15px" }}>
+          <div className="row" style={{ fontSize: "13px" }}>
             <div className="col-md-6">
               <label>Address:</label>
             </div>
@@ -189,12 +189,12 @@ class TopBar extends React.Component {
               <label>ZipCode:</label>
             </div>
           </div>
-          <div className="row" style={{ fontSize: "20px" }}>
+          <div className="row" style={{ fontSize: "13px" }}>
             <div className="col-md-6">{this.state.address}</div>
             <div className="col-md-6">{this.state.zipcode}</div>
           </div>
 
-          <div className="row" style={{ fontSize: "15px" }}>
+          <div className="row" style={{ fontSize: "13px" }}>
             <div className="col-md-6">
               <label>City:</label>
             </div>
@@ -202,12 +202,13 @@ class TopBar extends React.Component {
               <label>Country:</label>
             </div>
           </div>
-          <div className="row" style={{ fontSize: "20px" }}>
+          <div className="row" style={{ fontSize: "13px" }}>
             <div className="col-md-6">{this.state.city}</div>
             <div className="col-md-6">{this.state.country}</div>
           </div>
           <div>
-            <ButtonGroup style={{ justifyContent: "center" }}>
+            <br></br>
+            <ButtonGroup style={{ justifyContent: "center" ,textAlign:"center"}}>
               <Button
                 color="info"
                 style={{
@@ -240,7 +241,7 @@ class TopBar extends React.Component {
           <Row form>
             <Col md={6}>
               <FormGroup>
-                <Label for="FullName" style={{ fontSize: "15px" }}>
+                <Label for="FullName" style={{ fontSize: "13px" }}>
                   Full Name
                 </Label>
                 <Input
@@ -248,21 +249,21 @@ class TopBar extends React.Component {
                   name="fullName"
                   id="fullname"
                   onChange={this.inputChangeHandler.bind(this)}
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.fullname}
                 />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup>
-                <Label for="Email" style={{ fontSize: "15px" }}>
+                <Label for="Email" style={{ fontSize: "13px" }}>
                   Email
                 </Label>
                 <Input
                   type="email"
                   name="email"
                   id="Email"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.email}
                   disabled
                 />
@@ -272,7 +273,7 @@ class TopBar extends React.Component {
           <Row Form>
             <Col md={12}>
               <FormGroup>
-                <Label for="Address" style={{ fontSize: "15px" }}>
+                <Label for="Address" style={{ fontSize: "13px" }}>
                   Address
                 </Label>
                 <Input
@@ -280,7 +281,7 @@ class TopBar extends React.Component {
                   name="address"
                   onChange={this.inputChangeHandler.bind(this)}
                   id="exampleAddress"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.address}
                 />
               </FormGroup>
@@ -289,7 +290,7 @@ class TopBar extends React.Component {
           <Row form>
             <Col md={6}>
               <FormGroup>
-                <Label for="City" style={{ fontSize: "15px" }}>
+                <Label for="City" style={{ fontSize: "13px" }}>
                   City
                 </Label>
                 <Input
@@ -297,14 +298,14 @@ class TopBar extends React.Component {
                   name="city"
                   onChange={this.inputChangeHandler.bind(this)}
                   id="City"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.city}
                 />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup>
-                <Label for="Zip" style={{ fontSize: "15px" }}>
+                <Label for="Zip" style={{ fontSize: "13px" }}>
                   Zip Code
                 </Label>
                 <Input
@@ -312,7 +313,7 @@ class TopBar extends React.Component {
                   name="zipcode"
                   onChange={this.inputChangeHandler.bind(this)}
                   id="Zip"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.zipcode}
                 />
               </FormGroup>
@@ -321,7 +322,7 @@ class TopBar extends React.Component {
           <Row form>
             <Col md={6}>
               <FormGroup>
-                <Label for="Country" style={{ fontSize: "15px" }}>
+                <Label for="Country" style={{ fontSize: "13px" }}>
                   Country
                 </Label>
                 <Input
@@ -329,14 +330,14 @@ class TopBar extends React.Component {
                   name="country"
                   onChange={this.inputChangeHandler.bind(this)}
                   id="Country"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.country}
                 />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup>
-                <Label for="Mobile" style={{ fontSize: "15px" }}>
+                <Label for="Mobile" style={{ fontSize: "13px" }}>
                   Mobile
                 </Label>
                 <Input
@@ -344,7 +345,7 @@ class TopBar extends React.Component {
                   name="mobile"
                   id="Mobile"
                   onChange={this.inputChangeHandler.bind(this)}
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "13px" }}
                   value={this.state.mobile}
                 />
               </FormGroup>
@@ -382,12 +383,22 @@ class TopBar extends React.Component {
   
     if (localStorage.getItem("email") != null) {
       console.log("Able to read user");
-     redirectVar = <Redirect to="/userhome"/>
+    //  redirectVar = <Redirect to="/userhome"/>
       navLogin = (
         <ul class="nav navbar-nav navbar-right">
           <li>
             <NavItem>
               <NavLink
+          href="/userhome" style={{marginRight:"10px"}}
+              >
+                <span class="glyphicon glyphicon-search"></span> Search
+              </NavLink>{" "}
+            </NavItem>
+          </li>
+          <li>
+            <NavItem>
+              <NavLink
+              style={{marginRight:"10px"}}
                 colour="danger"
                 onClick={this.openModal}
               >
@@ -398,6 +409,7 @@ class TopBar extends React.Component {
            <li>
             <NavItem>
               <NavLink
+              style={{marginRight:"10px"}}
                 colour="danger"
                 onClick={this.handleLogout}
                 href="/login"
@@ -415,7 +427,7 @@ class TopBar extends React.Component {
 
       navLogin = (
         <NavItem>
-          <NavLink colour="danger" href="/login">
+          <NavLink colour="danger" href="/login" style={{marginRight:"10px"}}>
             <span class="glyphicon glyphicon-log-in"></span> Login
           </NavLink>
         </NavItem>
