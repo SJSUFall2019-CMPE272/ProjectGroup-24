@@ -22,7 +22,7 @@ The system will provide the pharmacists drugs recommendations as per the disease
 
 ### Process Flow ###
 
-The main objective of the system will be to gather information regarding the disease outbreaks, location-wise through web crawling the public websites such as Twitter, Facebook and new articles on Google. This information will then be cleaned and will be classified location-wise,uisng NLP and NER. The system will also maintain the data for disease to drug mapping. This data will be mapped with the location-wise diseases. The user(pharmacist) requests states his location, based on which the system provides the diseases prevalent in the region and the drugs corresponding to them. The data can help identify which drugs are needed to be stocked such that there is no shortage.
+The main objective of the system will be to gather information regarding the disease outbreaks, location-wise through web crawling the CDC site to obtain disease data. Another crawler will crawl the internet for mapping drugs with diseases. This file will be fed into a python program that converts it into a timeseries form which will be fed into Facebook Prophet. It gives us the prediction about January 20. The top 5 diseases in January 20 are displayed on the website. The user(pharmacist) requests states his location, based on which the system provides the diseases prevalent in the region and the drugs corresponding to them. The data can help identify which drugs are needed to be stocked such that there is no shortage.
 
 ![Process](process-2.png)
 
