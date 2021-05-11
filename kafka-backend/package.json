@@ -18,7 +18,7 @@
     "jsonwebtoken": "^8.5.1",
     "kafka": "^0.2.3",
     "kafka-node": "^2.5.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongo": "^0.1.0",
     "mongodb": "^3.3.4",
     "mongodb-autoincrement": "^1.0.1",
